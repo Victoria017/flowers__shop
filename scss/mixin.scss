@@ -1,0 +1,15 @@
+@mixin d-flex($dir, $jc: normal) {
+    display: flex;
+    flex-direction: $dir;
+
+    @if $jc != normal {
+        justify-content: $jc;
+    }
+}
+
+@mixin padding($pt, $pr, $pb, $pl) {
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+}

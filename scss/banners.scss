@@ -1,0 +1,192 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+
+.content {
+    max-width: 88.75rem;
+    margin: auto;
+}
+
+.banners {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-height: 42.125rem;
+
+    &__item:nth-child(1) {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    &__item {
+        position: relative;
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-bg1 {
+            background-color: #FFDB6B;
+            @include padding(4px, 0, 0, 2.56rem);
+
+        }
+
+        &-bg2 {
+            background-image: url(../images/bg-box.png);
+            @include padding(2.3rem, 0, 0, 4rem);
+
+        }
+
+        &-title {
+            position: absolute;
+            font-size: $fontSize * 2;
+            font-weight: 700;
+            color: $textDark;
+            top: 2.75rem;
+            right: 1.25rem;
+        }
+    }
+}
+
+.pleft {
+    top: 2rem;
+    left: 1.44rem;
+}
+
+.color-text {
+    color: $textLight;
+}
+
+.sale-header {
+    font-size: $fontSize * 3;
+    font-weight: bold;
+    color: $textDark;
+    @include padding (7.2rem, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-carousel {
+    border: none;
+    color: $textViolet;
+    text-align: center;
+    background: 0 0;
+    border: none;
+    opacity: 0.5;
+}
+
+.sale-flowers {
+    display: flex;
+    width: 100%;
+}
+
+.sale-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $textViolet;
+    background-color: $textLight;
+
+    &_top {
+        background-color: #FBF9FA;
+        position: relative;
+
+        &_item {
+            width: 3.5rem;
+            height: 3.5rem;
+            border: 1px dashed #E72222;
+            font-size: $fontSize;
+            @include padding(17px, 5px, 18px, 10px);
+            border-radius: 45px;
+            position: absolute;
+            margin: 6px 20px;
+        }
+
+        &_like {
+            position: absolute;
+            right: 1.5rem;
+            top: 2rem;
+        }
+
+        &-img {
+            width: 100%;
+            @include padding(0, 2rem, 0, 2rem);
+        }
+
+        &_top {
+            background-color: rgba(157, 117, 140, 0.39);
+            border-radius: 45px;
+            width: 3.5rem;
+            height: 3.5rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+
+    &_bottom {
+        @include d-flex(column);
+    }
+}
+
+.retting {
+    margin-left: 26px;
+}
+
+.sale-list_price-row {
+    @include d-flex(row, space-around);
+    font-size: $fontSize * 1.125;
+    font-weight: 300;
+    font-family: $font;
+
+}
+
+.sale-list_item-name {
+    color: $textDark;
+}
+
+.sale-list_item-price {
+
+    &-false {
+        color: #BDBDBD;
+        text-decoration: line-through;
+    }
+
+    &-true {
+        color: $textViolet;
+        font-weight: 700;
+    }
+}
+
+.sale-list_order-btn {
+    background-image: url(../images/button.png);
+    background-size: 100%;
+    background-color: $bgViolet;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 7px;
+    color: $textLight;
+    font-family: $font;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    @include padding(22px, 52px, 21px, 51px);
+    margin: auto;
+
+}
+
+.sale-list_quick-link {
+    color: #828282;
+    font-family: 'Euclid Circular B';
+    font-weight: 400;
+    @include d-flex(row, center);
+
+
+    &:hover {
+
+    }
+}

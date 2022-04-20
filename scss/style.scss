@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500&display=swap');
+
+@import './variables.scss';
+@import './banners.scss';
+@import './mixin.scss';
+@import '/fonts/EuclidCircularB-Regular/style.css';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: $bgLight;
+}
+
+/*header*/
+.header-top {
+    background-color: $bgDark;
+    &-menu {
+        justify-content: space-around;
+    }
+}
+
+.header__menu-left {
+    @include d-flex(row, space-around);
+}
+
+.header__list {
+    font-size: $fontSize;
+    color: $textLight;
+    font-family: $font;
+    text-decoration: none;
+
+    &:hover {
+        color: $textLight;
+    }
+
+    &-link {
+        color: $textViolet;
+
+        &:hover {
+            color: $textViolet;
+        }
+    }
+}
+
+.circle {
+    --bs-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 4px -2px;
+
+}
+
+.line_register {
+    border-left: 1px solid $textViolet;
+    height: $fontSize;
+}
+
+.header-bottom {
+    @include d-flex(row, space-between);
+    max-width: 88.75rem;
+    margin: auto;
+}
