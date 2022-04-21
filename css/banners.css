@@ -49,6 +49,41 @@
   left: 1.44rem;
 }
 
+.options {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.options__name {
+  position: absolute;
+  font-family: "MuseoSansCyrl, sans-serif";
+  font-size: 1.5rem;
+  line-height: 2.19rem;
+  margin: 3.625rem 0 0 0.5rem;
+  color: #333333;
+}
+.options__name-title {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  padding-top: 1rem;
+  color: #828282;
+}
+.options__name-video {
+  align-items: center;
+  bottom: 1.44rem;
+}
+.options__name-present {
+  margin: 0;
+  right: 0.5rem;
+  top: 3.625rem;
+  text-align: right;
+}
+
+.options-link {
+  position: relative;
+}
+
 .color-text {
   color: #ffffff;
 }
@@ -63,27 +98,35 @@
   padding-left: 0;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.button-page {
+  position: absolute;
+  right: 0;
 }
 
 .button-carousel {
   border: none;
-  color: #956D84;
-  text-align: center;
-  background: 0 0;
-  border: none;
-  opacity: 0.5;
+  background-color: transparent;
 }
 
 .sale-flowers {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .sale-list {
-  display: flex;
-  flex-direction: column;
   border: 1px solid #956D84;
   background-color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 18px);
+  margin-top: 20px;
 }
 .sale-list_top {
   background-color: #FBF9FA;
@@ -103,9 +146,17 @@
   margin: 6px 20px;
 }
 .sale-list_top_like {
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 33px;
+  height: 30px;
   position: absolute;
   right: 1.5rem;
   top: 2rem;
+}
+.sale-list_top_like:active, .sale-list_top_like.active {
+  background-image: url(../images/heart-active.svg);
 }
 .sale-list_top-img {
   width: 100%;
@@ -120,10 +171,13 @@
   width: 3.5rem;
   height: 3.5rem;
   position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  right: 0.8rem;
+  bottom: 1.7rem;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sale-list_bottom {
   display: flex;
@@ -131,7 +185,7 @@
 }
 
 .retting {
-  margin-left: 26px;
+  margin-left: 1.625rem;
 }
 
 .sale-list_price-row {
@@ -141,6 +195,8 @@
   font-size: 1.125rem;
   font-weight: 300;
   font-family: "MuseoModerno, sans-serif";
+  margin-top: 1.625rem;
+  margin-bottom: 2.56rem;
 }
 
 .sale-list_item-name {
@@ -174,6 +230,12 @@
   padding-left: 51px;
   margin: auto;
 }
+.sale-list_order-btn:hover {
+  background-color: #b599a9;
+}
+.sale-list_order-btn:active {
+  background-color: rgba(150, 110, 133, 0.15);
+}
 
 .sale-list_quick-link {
   color: #828282;
@@ -182,4 +244,15 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 1rem 0;
+}
+.sale-list_quick-link:hover {
+  color: #956D84;
+}
+.sale-list_quick-link:active {
+  color: rgba(150, 110, 133, 0.5);
+}
+
+.m-top {
+  margin-top: 1.5rem;
 }

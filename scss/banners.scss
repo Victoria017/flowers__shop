@@ -1,7 +1,6 @@
 @import './variables.scss';
 @import './mixin.scss';
 
-
 .content {
     max-width: 88.75rem;
     margin: auto;
@@ -55,6 +54,44 @@
     left: 1.44rem;
 }
 
+.options {
+    margin-top: 2rem;
+    @include d-flex(row, space-between);
+
+    &__name {
+        position: absolute;
+        font-family: $fontMuseoSansCyrl;
+        font-size: 1.5rem;
+        line-height: 2.19rem;
+        margin: 3.625rem 0 0 0.5rem;
+        color: $textDark;
+
+        &-title {
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            padding-top: 1rem;
+            color: $textGray;
+        }
+
+        &-video {
+            // @include d-flex(column,center);
+            align-items: center;
+            bottom: 1.44rem;
+        }
+
+        &-present {
+            margin: 0;
+            right: 0.5rem;
+            top: 3.625rem;
+            text-align: right;
+        }
+    }
+}
+
+.options-link {
+    position: relative;
+}
+
 .color-text {
     color: $textLight;
 }
@@ -66,28 +103,32 @@
     @include padding (7.2rem, 0, 0, 0);
     display: flex;
     justify-content: center;
+    position: relative;
+}
 
+.button-page {
+    position: absolute;
+    right: 0;
 }
 
 .button-carousel {
     border: none;
-    color: $textViolet;
-    text-align: center;
-    background: 0 0;
-    border: none;
-    opacity: 0.5;
+    background-color: transparent;
 }
 
 .sale-flowers {
-    display: flex;
+    @include d-flex(row, space-between);
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .sale-list {
-    display: flex;
-    flex-direction: column;
     border: 1px solid $textViolet;
     background-color: $textLight;
+    position: relative;
+    @include d-flex(column);
+    width: calc(25% - 18px);
+    margin-top: 20px;
 
     &_top {
         background-color: #FBF9FA;
@@ -105,9 +146,19 @@
         }
 
         &_like {
+            background-image: url(../images/heart.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 33px;
+            height: 30px;
             position: absolute;
             right: 1.5rem;
             top: 2rem;
+
+            &:active,
+            &.active {
+                background-image: url(../images/heart-active.svg);
+            }
         }
 
         &-img {
@@ -121,10 +172,11 @@
             width: 3.5rem;
             height: 3.5rem;
             position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
+            right: 0.8rem;
+            bottom: 1.7rem;
             margin: auto;
+            @include d-flex(column, center);
+            align-items: center;
         }
     }
 
@@ -134,7 +186,7 @@
 }
 
 .retting {
-    margin-left: 26px;
+    margin-left: 1.625rem;
 }
 
 .sale-list_price-row {
@@ -142,7 +194,8 @@
     font-size: $fontSize * 1.125;
     font-weight: 300;
     font-family: $font;
-
+    margin-top: 1.625rem;
+    margin-bottom: 2.56rem;
 }
 
 .sale-list_item-name {
@@ -177,6 +230,13 @@
     @include padding(22px, 52px, 21px, 51px);
     margin: auto;
 
+    &:hover {
+        background-color: $bgVioletHover;
+    }
+
+    &:active {
+        background-color: $bgVioletActive;
+    }
 }
 
 .sale-list_quick-link {
@@ -184,9 +244,17 @@
     font-family: 'Euclid Circular B';
     font-weight: 400;
     @include d-flex(row, center);
-
+    margin: 1rem 0;
 
     &:hover {
-
+        color: $textViolet;
     }
+
+    &:active {
+        color: $textVioletLight;
+    }
+}
+
+.m-top {
+    margin-top: 1.5rem;
 }

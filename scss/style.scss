@@ -4,7 +4,7 @@
 @import './banners.scss';
 @import './mixin.scss';
 @import '/fonts/EuclidCircularB-Regular/style.css';
-
+@import '/fonts/MuseoSansCyrl/style.css';
 
 * {
     box-sizing: border-box;
@@ -12,10 +12,27 @@
 
 body {
     width: 100%;
-    background-color: $bgLight;
 }
 
 /*header*/
+
+.header__img-left{
+        background-image: url(../images/right_flow.png);
+        position: absolute;
+        width: 10%;
+        min-height: 505px;
+        margin-top: 30%;
+}
+
+.header__img-right{
+        background-image: url(../images/left_flow.png);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 10%;
+        min-height: 505px;
+    }
+
 .header-top {
     background-color: $bgDark;
     &-menu {
