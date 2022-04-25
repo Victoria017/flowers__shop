@@ -57,7 +57,7 @@
 }
 .options__name {
   position: absolute;
-  font-family: "MuseoSansCyrl, sans-serif";
+  font-family: MuseoSansCyrl, sans-serif;
   font-size: 1.5rem;
   line-height: 2.19rem;
   margin: 3.625rem 0 0 0.5rem;
@@ -185,7 +185,7 @@
 }
 
 .retting {
-  margin-left: 1.625rem;
+  margin-left: 2.5rem;
 }
 
 .sale-list_price-row {
@@ -194,9 +194,10 @@
   justify-content: space-around;
   font-size: 1.125rem;
   font-weight: 300;
-  font-family: "MuseoModerno, sans-serif";
+  font-family: MuseoSansCyrl, sans-serif;
   margin-top: 1.625rem;
   margin-bottom: 2.56rem;
+  line-height: 1rem;
 }
 
 .sale-list_item-name {
@@ -220,7 +221,7 @@
   border: none;
   border-radius: 7px;
   color: #ffffff;
-  font-family: "MuseoModerno, sans-serif";
+  font-family: MuseoModerno, sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -231,10 +232,10 @@
   margin: auto;
 }
 .sale-list_order-btn:hover {
-  background-color: #b599a9;
+  background-color: rgba(149, 109, 132, 0.9);
 }
 .sale-list_order-btn:active {
-  background-color: rgba(150, 110, 133, 0.15);
+  background-color: rgba(149, 109, 132, 0.5);
 }
 
 .sale-list_quick-link {
@@ -255,4 +256,57 @@
 
 .m-top {
   margin-top: 1.5rem;
+}
+
+.oll__news {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  color: #956D84;
+  text-decoration: none;
+}
+.oll__news:hover {
+  color: #956D84;
+}
+
+.forum__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.forum__list-item {
+  position: relative;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.forum__list-item-bg {
+  position: absolute;
+  z-index: -1;
+  background-color: #956D84;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+}
+.forum__list-item-img {
+  padding: 0 24px;
+}
+.forum__list-item-title {
+  font-family: MuseoSansCyrl, sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 25px;
+  padding: 2rem 0 1rem 1.6rem;
+}
+.forum__list-item-descr {
+  font-size: 1rem;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 2rem 0 1rem 1.6rem;
+}
+
+.maps-bg {
+  width: 100%;
+  height: 450px;
+  margin-top: 5rem;
 }

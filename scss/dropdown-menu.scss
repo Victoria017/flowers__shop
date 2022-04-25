@@ -1,0 +1,45 @@
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu .submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown-menu>li:hover>.submenu {
+    display: block;
+}
+
+.dropdown-chevron-left {
+    
+    &::after {
+        content: '';
+        background-image: url('../images/shevron-left.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 7px;
+        display: inline-block;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    &:hover::after {
+        background-image: url('../images/shevron-right.svg');
+
+    }
+}

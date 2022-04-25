@@ -2,7 +2,9 @@
 @font-face {
     font-family: 'MuseoSansCyrl'; 
     src: local('MuseoSansCyrl-300'), local('MuseoSansCyrl'),
-    url('./MuseoSansCyrl-300.woff') format('woff');
+        url('./MuseoSansCyrl-300.ttf') format('truetype'),
+        url('./MuseoSansCyrl-300.svg') format('svg'),
+        url('./MuseoSansCyrl-300.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }

@@ -186,16 +186,17 @@
 }
 
 .retting {
-    margin-left: 1.625rem;
+    margin-left: 2.5rem;
 }
 
 .sale-list_price-row {
     @include d-flex(row, space-around);
     font-size: $fontSize * 1.125;
     font-weight: 300;
-    font-family: $font;
+    font-family: $fontMuseoSansCyrl;
     margin-top: 1.625rem;
     margin-bottom: 2.56rem;
+    line-height: 1rem;
 }
 
 .sale-list_item-name {
@@ -231,11 +232,11 @@
     margin: auto;
 
     &:hover {
-        background-color: $bgVioletHover;
+        background-color: rgba(149, 109, 132, 0.9);
     }
 
     &:active {
-        background-color: $bgVioletActive;
+        background-color: rgba(149, 109, 132, 0.5);
     }
 }
 
@@ -257,4 +258,55 @@
 
 .m-top {
     margin-top: 1.5rem;
+}
+.oll__news {
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    color: $textViolet;
+    text-decoration: none;
+    &:hover {
+        color: $textViolet;
+    }
+}
+.forum__list {
+    @include d-flex(row, space-between);
+
+    &-item {
+        position: relative;
+        width: 32%;
+        @include d-flex(column,center);
+  
+    &-bg {
+        position: absolute;
+        z-index: -1;
+        background-color: $bgViolet;
+        width: 100%;
+        height: 80%;
+        bottom: 0;
+    }
+    
+    &-img {
+        padding: 0 24px;
+    }
+    &-title {
+        font-family: $fontMuseoSansCyrl;
+        color: $textLight;
+        font-size: $fontSize * 1.5;
+        line-height: 25px;
+        padding: 2rem 0 1rem 1.6rem;
+
+    }
+    &-descr {
+        font-size: $fontSize;
+        line-height: 18px;
+        color: $textLight;
+        padding: 2rem 0 1rem 1.6rem;
+
+    }
+}
+}
+.maps-bg {
+    width: 100%;
+    height: 450px;
+    margin-top: 5rem;
 }

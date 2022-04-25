@@ -2,7 +2,9 @@
 
 @import './variables.scss';
 @import './banners.scss';
+@import './dropdown-menu.scss';
 @import './mixin.scss';
+@import '../scss/footer.scss';
 @import '/fonts/EuclidCircularB-Regular/style.css';
 @import '/fonts/MuseoSansCyrl/style.css';
 
@@ -16,6 +18,28 @@ body {
 
 /*header*/
 
+.header {
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    color: $textLight;
+    &-top {
+        background-color: $bgDark;
+
+        &-width {
+            max-width: 88.75rem;
+            margin: auto;
+            position: relative;
+        }
+
+    }
+    &-bottom {
+        @include d-flex(row);
+        max-width: 88.75rem;
+        margin: auto;
+        position: relative;
+    }
+
+}
 .header__img-left{
         background-image: url(../images/right_flow.png);
         position: absolute;
@@ -33,22 +57,38 @@ body {
         min-height: 505px;
     }
 
-.header-top {
-    background-color: $bgDark;
-    &-menu {
-        justify-content: space-around;
-    }
-}
+ .header__menu-left {
+    @include d-flex(row, space-between);
+    width: 100%;
+    max-width: 50rem;
+    align-items: baseline;
 
-.header__menu-left {
-    @include d-flex(row, space-around);
-}
 
-.header__list {
+}
+.header__menu-right {
+    position: absolute;
+    right: 0;
+}
+.menu__category {
     font-size: $fontSize;
     color: $textLight;
     font-family: $font;
+    font-weight: 700;
+}
+.nav-link-style {
+    color: $textDark;
+}
+.nav-link-hover  {
+    color: $textDark;
+
+    &:hover,
+    &:focus {
+        color: $textViolet;
+    }
+}
+.header__list {
     text-decoration: none;
+    color: $textLight;
 
     &:hover {
         color: $textLight;
@@ -62,7 +102,17 @@ body {
         }
     }
 }
-
+.hover-link {
+    &:hover {
+        background-color: $bgViolet;
+        color: $textLight;
+    }
+    &:active {
+        background-color: $bgViolet;
+        color: $textLight;
+    }
+    
+}
 .circle {
     --bs-bg-opacity: 1;
     background-color: rgba(255, 255, 255, 0.7);
@@ -74,9 +124,77 @@ body {
     border-left: 1px solid $textViolet;
     height: $fontSize;
 }
+/* header-menu*/
 
 .header-bottom {
-    @include d-flex(row, space-between);
-    max-width: 88.75rem;
-    margin: auto;
+    padding: 1.75rem 0 4rem;
+}
+.menu {
+    @include d-flex(column, space-between);
+    padding: 0 12.5rem 0 7.5rem;
+    flex-grow: 1;
+
+    &__search {
+        @include d-flex(row, start);
+    }
+}
+.d-flex {
+    justify-content: space-between;
+}
+.dropdown-bottom {
+    border-bottom: 1px solid $bgViolet;
+}
+.dropdown-search {
+    @include d-flex (row, space-between);
+    flex-grow: 1;
+}
+.header__navigation {
+    right: 0;
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    line-height: 10px;
+    @include d-flex(column, space-between);
+    align-items: flex-end;
+
+    &-social {
+
+        &-btn {
+            background-color: $bgViolet;
+            width: 27px;
+            padding: 6px;
+            border-radius: 50%;
+            
+            &:hover {
+                background-color: rgba(149, 109, 132, 0.9);
+            }
+            &:active {
+                background-color: rgba(149, 109, 132, 0.5);
+            }
+        }
+    }
+    &-phone {
+        color: $textDark;
+    }
+    &-menu {
+
+        &-favorite {
+
+        }
+    }
+
+}
+.navigation-btn {
+    border: none;
+    background-color: transparent;
+
+}
+.favorite-img {
+    width: 40px;
+}
+.favorite-price {
+    color: $textGray;
+}
+.circle-violet {
+    background-color: $bgViolet;
+    font-family: $fontMuseoSansCyrl;
 }
