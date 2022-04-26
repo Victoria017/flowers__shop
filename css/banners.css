@@ -80,6 +80,10 @@
   text-align: right;
 }
 
+.options__img {
+  width: 100%;
+}
+
 .options-link {
   position: relative;
 }
@@ -221,7 +225,7 @@
   border: none;
   border-radius: 7px;
   color: #ffffff;
-  font-family: MuseoModerno, sans-serif;
+  font-family: EuclidCircularB-Regular, sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -305,8 +309,76 @@
   padding: 2rem 0 1rem 1.6rem;
 }
 
+.maps {
+  position: relative;
+  margin-top: 5rem;
+}
 .maps-bg {
   width: 100%;
-  height: 450px;
-  margin-top: 5rem;
+  height: 508px;
+}
+.maps__menu {
+  position: absolute;
+  right: 13.75rem;
+  top: 0;
+  bottom: 0;
+}
+.maps__menu-top {
+  background-color: #ffffff;
+  position: relative;
+  width: 23.75rem;
+  height: 50%;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+}
+.maps__menu-top-img {
+  text-align: center;
+  margin: 1.5rem 0 2.625rem;
+}
+.maps__menu-top-phone {
+  padding: 0 0 0 4.5rem;
+}
+.maps__menu-bottom {
+  background-color: #ffffff;
+  position: relative;
+  width: 23.75rem;
+  height: 50%;
+  overflow: hidden;
+  clip-path: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 100%, 0 100%, 0 100%, 0 0, 0 0);
+  padding: 1.5rem 0 0 4.5rem;
+  top: -1px;
+}
+
+.menu__title {
+  display: flex;
+}
+
+.phone-title {
+  font-family: EuclidCircularB-Regular, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 18px;
+  color: #333333;
+  padding-left: 1rem;
+}
+
+.phone-number {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  line-height: 18px;
+  font-weight: 300;
+  color: #828282;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .options.mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

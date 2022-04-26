@@ -13,12 +13,9 @@
 </head>
 
 <body>
-    <div class="header__img-left"></div>
-    <div class="header__img-right"></div>
-
     <div class="root">
-        <div class="header">
-            <nav class="navbar navbar-expand header-top">
+        <div class="header desktop">
+            <nav class="navbar navbar-expand header-top desktop">
                 <div class="collapse navbar-collapse header-top-width">
                     <div class="header__menu-left">
                         <ul class="navbar-nav mb-lg-0">
@@ -77,6 +74,7 @@
                     </div>
                 </div>
             </nav>
+
             <div class="header-bottom">
                 <div class="logo">
                     <img src="./images/logo.png">
@@ -95,9 +93,8 @@
                             </ul>
                         </div>
                         <div class="dropdown dropdown-bottom dropdown-search">
-                            <a class="btn text-secondary" href="#" role="button">
-                                Поиск по товарам
-                            </a>
+                            <input type="text" class="form-control border-0" placeholder="Поиск по товарам"
+                                aria-describedby="basic-addon1">
                             <img src="./images/search.svg" alt="">
                         </div>
                     </div>
@@ -109,9 +106,7 @@
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle d-inline-block nav-link-hover"
                                                 href="catalog.html" role="button" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                Каталог товаров
-                                            </a>
+                                                aria-expanded="false">Каталог товаров</a>
 
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li><a class="dropdown-item header__list-link hover-link"
@@ -212,9 +207,93 @@
             </div>
 
         </div>
+        <div class="header mobile">
+            <nav class="navbar navbar-expand header-top">
+                <div class="collapse navbar-collapse header-top-width">
+                    <div class="header__menu-left">
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-inline-block header__list-link" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Грн
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">Грн</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">USD</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">EUR</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="header__list" href="#">
+                            <img src="./images/car.svg" width="22" height="22" class="d-inline-block  header__list">
+                            Доставка и оплата
+                        </a>
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-inline-block header__list-link" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">RU</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">RU</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">UKR</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">ENG</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-bottom">
+                <a href="#" class="btn" role="button" data-bs-toggle="button">
+                    <img src="./images/menu-btn.svg" alt="">
+                </a>
+                <div class="logo">
+                    <img src="./images/logo.png">
+                </div>
+
+                <div class="header__navigation">
+                    <div class="header__navigation-menu">
+                        <a href="#" class="header__list ">
+                            <img src="./images/search.svg" alt="">
+                        </a>
+                        <a class="header__list header__navigation-menu-favorite" href="#">
+                            <img class="favorite-img" src="./images/basket.svg" alt="">
+                            <span class="translate-middle badge rounded-pill circle-violet">1</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide mobile" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/flat-roses.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/reg-rose.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/reg-rose.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
         <div class="content">
 
-            <div class="banners">
+            <div class="banners desktop">
                 <div class="banners__item">
                     <img class="banners__item-img" src="./images/flat-roses.png" alt="">
                     <div class="banners__item-title">Скидки <span class="color-text">-6%</span> на все<br> букеты <span
@@ -237,7 +316,8 @@
                     <div class="banners__item-title pleft">Цветы в <br>коробке</div>
                 </div>
             </div>
-            <div class="options">
+            <!-- options-->
+            <div class="options desktop">
                 <a class="options-link" href="#">
                     <div class="options__name">Фото доставок<br> наших букетов
                         <div class="options__name-title">Безупречное качество<br> обслуживания и доставка в<br> любую
@@ -260,6 +340,21 @@
                     <img class="options__img" src="./images/present.png" alt="">
                 </a>
             </div>
+
+            <div class="options mobile">
+                <a class="options-link" href="#">
+                    <img class="options__img" src="./images/option1.png" alt="">
+                    <div class="options__name">Фото доставок</div>
+                </a>
+                <a class="options-link" href="#">
+                    <img class="options__img" src="./images/option2.png" alt="">
+                    <div class="options__name">Фото доставок</div>
+                </a>
+                <a class="options-link" href="#">
+                    <img class="options__img" src="./images/option3.png" alt="">
+                    <div class="options__name">Фото доставок</div>
+                </a>
+            </div>
             <!-- sales -->
             <div class="sale">
                 <div class="sale-header">
@@ -274,14 +369,14 @@
                     </div>
                 </div>
                 <div class="sale-flowers">
-                    <div class="sale-list">
-                        <div class="sale-list_top">
-                            <div class="sale-list_top_item">-19%</div>
-                            <div class="sale-list_top_like"></div>
-                            <img class="sale-list_top-img" src="./images/akciia1.png" alt="">
-                            <div class="sale-list_top_top">TOP</div>
+                    <div class="sale-item">
+                        <div class="sale-item_top">
+                            <div class="sale-item_top_item">-19%</div>
+                            <div class="sale-item_top_like"></div>
+                            <img class="sale-item_top-img" src="./images/akciia1.png" alt="">
+                            <div class="sale-item_top_top">TOP</div>
                         </div>
-                        <div class="sale-list_bottom">
+                        <div class="sale-item_bottom">
                             <div class="retting">
                                 <img src="./images/star.svg" alt="">
                                 <img src="./images/star.svg" alt="">
@@ -289,58 +384,58 @@
                                 <img src="./images/star.svg" alt="">
                                 <img src="./images/star.svg" alt="">
                             </div>
-                            <div class="sale-list_price-row">
-                                <div class="sale-list_item-name">
+                            <div class="sale-item_price-row">
+                                <div class="sale-item_item-name">
                                     101 красная<br> роза
                                 </div>
-                                <div class="sale-list_item-price">
-                                    <div class="sale-list_item-price-false">
+                                <div class="sale-item_item-price">
+                                    <div class="sale-item_item-price-false">
                                         2800 грн
                                     </div>
-                                    <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price-true">
                                         2280 грн
                                     </div>
                                 </div>
                             </div>
-                            <button class="sale-list_order-btn">Заказать</button>
-                            <a class="sale-list_quick-link">Быстрый заказ</a>
+                            <button class="sale-item_order-btn">Заказать</button>
+                            <a class="sale-item_quick-link">Быстрый заказ</a>
                         </div>
 
                     </div>
-                    <div class="sale-list">
-                        <div class="sale-list_top">
-                            <div class="sale-list_top_item">-10%</div>
-                            <img class="sale-list_top-img" src="./images/akciia2.png" alt="">
-                            <div class="sale-list_top_top">TOP</div>
+                    <div class="sale-item">
+                        <div class="sale-item_top">
+                            <div class="sale-item_top_item">-10%</div>
+                            <img class="sale-item_top-img" src="./images/akciia2.png" alt="">
+                            <div class="sale-item_top_top">TOP</div>
                         </div>
-                        <div class="sale-list_bottom">
+                        <div class="sale-item_bottom">
                             <div class="m-top"></div>
-                            <div class="sale-list_price-row">
-                                <div class="sale-list_item-name">
+                            <div class="sale-item_price-row">
+                                <div class="sale-item_item-name">
                                     25 розовых<br> пионовидных роз
                                 </div>
-                                <div class="sale-list_item-price">
-                                    <div class="sale-list_item-price-false">
+                                <div class="sale-item_item-price">
+                                    <div class="sale-item_item-price-false">
                                         2800 грн
                                     </div>
-                                    <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price-true">
                                         1680 грн
                                     </div>
                                 </div>
                             </div>
-                            <button class="sale-list_order-btn">Заказать</button>
-                            <a class="sale-list_quick-link">Быстрый заказ</a>
+                            <button class="sale-item_order-btn">Заказать</button>
+                            <a class="sale-item_quick-link">Быстрый заказ</a>
                         </div>
 
                     </div>
-                    <div class="sale-list">
-                        <div class="sale-list_top">
-                            <div class="sale-list_top_item">-19%</div>
-                            <img class="sale-list_top-img" src="./images/akciia3.png" alt="">
-                            <div class="sale-list_top_top">TOP</div>
-                            <div class="sale-list_bottom"></div>
+                    <div class="sale-item">
+                        <div class="sale-item_top">
+                            <div class="sale-item_top_item">-19%</div>
+                            <img class="sale-item_top-img" src="./images/akciia3.png" alt="">
+                            <div class="sale-item_top_top">TOP</div>
+                            <div class="sale-item_bottom"></div>
                         </div>
-                        <div class="sale-list_bottom">
+                        <div class="sale-item_bottom">
                             <div class="retting">
                                 <img src="./images/star.svg" alt="">
                                 <img src="./images/star.svg" alt="">
@@ -348,57 +443,57 @@
                                 <img src="./images/star.svg" alt="">
                                 <img src="./images/star.svg" alt="">
                             </div>
-                            <div class="sale-list_price-row">
-                                <div class="sale-list_item-name">
+                            <div class="sale-item_price-row">
+                                <div class="sale-item_item-name">
                                     Влюбленность
                                 </div>
-                                <div class="sale-list_item-price">
-                                    <div class="sale-list_item-price-false">
+                                <div class="sale-item_item-price">
+                                    <div class="sale-item_item-price-false">
                                         2800 грн
                                     </div>
-                                    <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price-true">
                                         1270 грн
                                     </div>
                                 </div>
                             </div>
-                            <button class="sale-list_order-btn">Заказать</button>
-                            <a class="sale-list_quick-link">Быстрый заказ</a>
+                            <button class="sale-item_order-btn">Заказать</button>
+                            <a class="sale-item_quick-link">Быстрый заказ</a>
                         </div>
 
                     </div>
-                    <div class="sale-list">
-                        <div class="sale-list_top">
-                            <div class="sale-list_top_item">-19%</div>
-                            <img class="sale-list_top-img" src="./images/akciia4.png" alt="">
-                            <div class="sale-list_top_top">TOP</div>
+                    <div class="sale-item">
+                        <div class="sale-item_top">
+                            <div class="sale-item_top_item">-19%</div>
+                            <img class="sale-item_top-img" src="./images/akciia4.png" alt="">
+                            <div class="sale-item_top_top">TOP</div>
                         </div>
-                        <div class="sale-list_bottom">
+                        <div class="sale-item_bottom">
                             <div class="m-top"></div>
-                            <div class="sale-list_price-row">
-                                <div class="sale-list_item-name">
+                            <div class="sale-item_price-row">
+                                <div class="sale-item_item-name">
                                     Корзина все<br> для тебя
                                 </div>
-                                <div class="sale-list_item-price">
-                                    <div class="sale-list_item-price-false">
+                                <div class="sale-item_item-price">
+                                    <div class="sale-item_item-price-false">
                                         2800 грн
                                     </div>
-                                    <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price-true">
                                         2020 грн
                                     </div>
                                 </div>
                             </div>
-                            <button class="sale-list_order-btn">Заказать</button>
-                            <a class="sale-list_quick-link">Быстрый заказ</a>
+                            <button class="sale-item_order-btn">Заказать</button>
+                            <a class="sale-item_quick-link">Быстрый заказ</a>
                         </div>
                     </div>
-                    <div class="sale-list">
-                        <div class="sale-list_top">
-                            <div class="sale-list_top_item">-19%</div>
-                            <div class="sale-list_top_like"></div>
-                            <img class="sale-list_top-img" src="./images/akciia1.png" alt="">
-                            <div class="sale-list_top_top">TOP</div>
+                    <div class="sale-item">
+                        <div class="sale-item_top">
+                            <div class="sale-item_top_item">-19%</div>
+                            <div class="sale-item_top_like"></div>
+                            <img class="sale-item_top-img" src="./images/akciia1.png" alt="">
+                            <div class="sale-item_top_top">TOP</div>
                         </div>
-                        <div class="sale-list_bottom">
+                        <div class="sale-item_bottom">
                             <div class="retting">
                                 <img src="./images/star.svg" alt="">
                                 <img src="./images/star.svg" alt="">
@@ -406,58 +501,58 @@
                                 <img src="./images/star.svg" alt="">
                                 <img src="./images/star.svg" alt="">
                             </div>
-                            <div class="sale-list_price-row">
-                                <div class="sale-list_item-name">
+                            <div class="sale-item_price-row">
+                                <div class="sale-item_item-name">
                                     101 красная<br> роза
                                 </div>
-                                <div class="sale-list_item-price">
-                                    <div class="sale-list_item-price-false">
+                                <div class="sale-item_item-price">
+                                    <div class="sale-item_item-price-false">
                                         2800 грн
                                     </div>
-                                    <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price-true">
                                         2280 грн
                                     </div>
                                 </div>
                             </div>
-                            <button class="sale-list_order-btn">Заказать</button>
-                            <a class="sale-list_quick-link">Быстрый заказ</a>
+                            <button class="sale-item_order-btn">Заказать</button>
+                            <a class="sale-item_quick-link">Быстрый заказ</a>
                         </div>
 
                     </div>
-                    <div class="sale-list">
-                        <div class="sale-list_top">
-                            <div class="sale-list_top_item">-10%</div>
-                            <img class="sale-list_top-img" src="./images/akciia2.png" alt="">
-                            <div class="sale-list_top_top">TOP</div>
+                    <div class="sale-item">
+                        <div class="sale-item_top">
+                            <div class="sale-item_top_item">-10%</div>
+                            <img class="sale-item_top-img" src="./images/akciia2.png" alt="">
+                            <div class="sale-item_top_top">TOP</div>
                         </div>
-                        <div class="sale-list_bottom">
+                        <div class="sale-item_bottom">
                             <div class="m-top"></div>
-                            <div class="sale-list_price-row">
-                                <div class="sale-list_item-name">
+                            <div class="sale-item_price-row">
+                                <div class="sale-item_item-name">
                                     25 розовых<br> пионовидных роз
                                 </div>
-                                <div class="sale-list_item-price">
-                                    <div class="sale-list_item-price-false">
+                                <div class="sale-item_item-price">
+                                    <div class="sale-item_item-price-false">
                                         2800 грн
                                     </div>
-                                    <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price-true">
                                         1680 грн
                                     </div>
                                 </div>
                             </div>
-                            <button class="sale-list_order-btn">Заказать</button>
-                            <a class="sale-list_quick-link">Быстрый заказ</a>
+                            <button class="sale-item_order-btn">Заказать</button>
+                            <a class="sale-item_quick-link">Быстрый заказ</a>
                         </div>
 
                     </div>
-                    <div class="sale-list">
-                        <div class="sale-list_top">
-                            <div class="sale-list_top_item">-19%</div>
-                            <img class="sale-list_top-img" src="./images/akciia3.png" alt="">
-                            <div class="sale-list_top_top">TOP</div>
-                            <div class="sale-list_bottom"></div>
+                    <div class="sale-item">
+                        <div class="sale-item_top">
+                            <div class="sale-item_top_item">-19%</div>
+                            <img class="sale-item_top-img" src="./images/akciia3.png" alt="">
+                            <div class="sale-item_top_top">TOP</div>
+                            <div class="sale-item_bottom"></div>
                         </div>
-                        <div class="sale-list_bottom">
+                        <div class="sale-item_bottom">
                             <div class="retting">
                                 <img src="./images/star.svg" alt="">
                                 <img src="./images/star.svg" alt="">
@@ -465,47 +560,47 @@
                                 <img src="./images/star.svg" alt="">
                                 <img src="./images/star.svg" alt="">
                             </div>
-                            <div class="sale-list_price-row">
-                                <div class="sale-list_item-name">
+                            <div class="sale-item_price-row">
+                                <div class="sale-item_item-name">
                                     Влюбленность
                                 </div>
-                                <div class="sale-list_item-price">
-                                    <div class="sale-list_item-price-false">
+                                <div class="sale-item_item-price">
+                                    <div class="sale-item_item-price-false">
                                         2800 грн
                                     </div>
-                                    <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price-true">
                                         1270 грн
                                     </div>
                                 </div>
                             </div>
-                            <button class="sale-list_order-btn">Заказать</button>
-                            <a class="sale-list_quick-link">Быстрый заказ</a>
+                            <button class="sale-item_order-btn">Заказать</button>
+                            <a class="sale-item_quick-link">Быстрый заказ</a>
                         </div>
 
                     </div>
-                    <div class="sale-list">
-                        <div class="sale-list_top">
-                            <div class="sale-list_top_item">-19%</div>
-                            <img class="sale-list_top-img" src="./images/akciia4.png" alt="">
-                            <div class="sale-list_top_top">TOP</div>
+                    <div class="sale-item">
+                        <div class="sale-item_top">
+                            <div class="sale-item_top_item">-19%</div>
+                            <img class="sale-item_top-img" src="./images/akciia4.png" alt="">
+                            <div class="sale-item_top_top">TOP</div>
                         </div>
-                        <div class="sale-list_bottom">
+                        <div class="sale-item_bottom">
                             <div class="m-top"></div>
-                            <div class="sale-list_price-row">
-                                <div class="sale-list_item-name">
+                            <div class="sale-item_price-row">
+                                <div class="sale-item_item-name">
                                     Корзина все<br> для тебя
                                 </div>
-                                <div class="sale-list_item-price">
-                                    <div class="sale-list_item-price-false">
+                                <div class="sale-item_item-price">
+                                    <div class="sale-item_item-price-false">
                                         2800 грн
                                     </div>
-                                    <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price-true">
                                         2020 грн
                                     </div>
                                 </div>
                             </div>
-                            <button class="sale-list_order-btn">Заказать</button>
-                            <a class="sale-list_quick-link">Быстрый заказ</a>
+                            <button class="sale-item_order-btn">Заказать</button>
+                            <a class="sale-item_quick-link">Быстрый заказ</a>
                         </div>
                     </div>
                 </div>
@@ -524,13 +619,13 @@
                         </div>
                     </div>
                     <div class="sale-flowers">
-                        <div class="sale-list">
-                            <div class="sale-list_top">
-                                <div class="sale-list_top_like"></div>
-                                <img class="sale-list_top-img" src="./images/sezon1.png" alt="">
-                                <div class="sale-list_top_top">TOP</div>
+                        <div class="sale-item">
+                            <div class="sale-item_top">
+                                <div class="sale-item_top_like"></div>
+                                <img class="sale-item_top-img" src="./images/sezon1.png" alt="">
+                                <div class="sale-item_top_top">TOP</div>
                             </div>
-                            <div class="sale-list_bottom">
+                            <div class="sale-item_bottom">
                                 <div class="retting">
                                     <img src="./images/star.svg" alt="">
                                     <img src="./images/star.svg" alt="">
@@ -538,50 +633,50 @@
                                     <img src="./images/star.svg" alt="">
                                     <img src="./images/star.svg" alt="">
                                 </div>
-                                <div class="sale-list_price-row">
-                                    <div class="sale-list_item-name">
+                                <div class="sale-item_price-row">
+                                    <div class="sale-item_item-name">
                                         Мечтательница
                                     </div>
-                                    <div class="sale-list_item-price">
-                                        <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price">
+                                        <div class="sale-item_item-price-true">
                                             2280 грн
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-list_order-btn">Заказать</button>
-                                <a class="sale-list_quick-link">Быстрый заказ</a>
+                                <button class="sale-item_order-btn">Заказать</button>
+                                <a class="sale-item_quick-link">Быстрый заказ</a>
                             </div>
 
                         </div>
-                        <div class="sale-list">
-                            <div class="sale-list_top">
-                                <img class="sale-list_top-img p-0" src="./images/sezon2.png" alt="">
-                                <div class="sale-list_top_top">TOP</div>
+                        <div class="sale-item">
+                            <div class="sale-item_top">
+                                <img class="sale-item_top-img p-0" src="./images/sezon2.png" alt="">
+                                <div class="sale-item_top_top">TOP</div>
                             </div>
-                            <div class="sale-list_bottom lh-1">
+                            <div class="sale-item_bottom lh-1">
                                 <div class="m-top"></div>
-                                <div class="sale-list_price-row mb-2">
-                                    <div class="sale-list_item-name">
+                                <div class="sale-item_price-row mb-2">
+                                    <div class="sale-item_item-name">
                                         Корзина<br>солнечного<br>настроения
                                     </div>
-                                    <div class="sale-list_item-price">
-                                        <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price">
+                                        <div class="sale-item_item-price-true">
                                             1680 грн
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-list_order-btn">Заказать</button>
-                                <a class="sale-list_quick-link">Быстрый заказ</a>
+                                <button class="sale-item_order-btn">Заказать</button>
+                                <a class="sale-item_quick-link">Быстрый заказ</a>
                             </div>
 
                         </div>
-                        <div class="sale-list">
-                            <div class="sale-list_top">
-                                <img class="sale-list_top-img" src="./images/sezon3.png" alt="">
-                                <div class="sale-list_top_top">TOP</div>
-                                <div class="sale-list_bottom"></div>
+                        <div class="sale-item">
+                            <div class="sale-item_top">
+                                <img class="sale-item_top-img" src="./images/sezon3.png" alt="">
+                                <div class="sale-item_top_top">TOP</div>
+                                <div class="sale-item_bottom"></div>
                             </div>
-                            <div class="sale-list_bottom">
+                            <div class="sale-item_bottom">
                                 <div class="retting">
                                     <img src="./images/star.svg" alt="">
                                     <img src="./images/star.svg" alt="">
@@ -589,48 +684,48 @@
                                     <img src="./images/star.svg" alt="">
                                     <img src="./images/star.svg" alt="">
                                 </div>
-                                <div class="sale-list_price-row">
-                                    <div class="sale-list_item-name">
+                                <div class="sale-item_price-row">
+                                    <div class="sale-item_item-name">
                                         Цветочная клумба
                                     </div>
-                                    <div class="sale-list_item-price">
-                                        <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price">
+                                        <div class="sale-item_item-price-true">
                                             1270 грн
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-list_order-btn">Заказать</button>
-                                <a class="sale-list_quick-link">Быстрый заказ</a>
+                                <button class="sale-item_order-btn">Заказать</button>
+                                <a class="sale-item_quick-link">Быстрый заказ</a>
                             </div>
 
                         </div>
-                        <div class="sale-list">
-                            <div class="sale-list_top">
-                                <img class="sale-list_top-img" src="./images/sezon4.png" alt="">
-                                <div class="sale-list_top_top">TOP</div>
+                        <div class="sale-item">
+                            <div class="sale-item_top">
+                                <img class="sale-item_top-img" src="./images/sezon4.png" alt="">
+                                <div class="sale-item_top_top">TOP</div>
                             </div>
-                            <div class="sale-list_bottom lh-1">
+                            <div class="sale-item_bottom lh-1">
                                 <div class="m-top"></div>
-                                <div class="sale-list_price-row mb-4">
-                                    <div class="sale-list_item-name">
+                                <div class="sale-item_price-row mb-4">
+                                    <div class="sale-item_item-name">
                                         Корзина<br> Дюймовочка
                                     </div>
-                                    <div class="sale-list_item-price">
-                                        <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price">
+                                        <div class="sale-item_item-price-true">
                                             2020 грн
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-list_order-btn">Заказать</button>
-                                <a class="sale-list_quick-link">Быстрый заказ</a>
+                                <button class="sale-item_order-btn">Заказать</button>
+                                <a class="sale-item_quick-link">Быстрый заказ</a>
                             </div>
                         </div>
-                        <div class="sale-list">
-                            <div class="sale-list_top">
-                                <img class="sale-list_top-img" src="./images/sezon1.png" alt="">
-                                <div class="sale-list_top_top">TOP</div>
+                        <div class="sale-item">
+                            <div class="sale-item_top">
+                                <img class="sale-item_top-img" src="./images/sezon1.png" alt="">
+                                <div class="sale-item_top_top">TOP</div>
                             </div>
-                            <div class="sale-list_bottom">
+                            <div class="sale-item_bottom">
                                 <div class="retting">
                                     <img src="./images/star.svg" alt="">
                                     <img src="./images/star.svg" alt="">
@@ -638,50 +733,50 @@
                                     <img src="./images/star.svg" alt="">
                                     <img src="./images/star.svg" alt="">
                                 </div>
-                                <div class="sale-list_price-row">
-                                    <div class="sale-list_item-name">
+                                <div class="sale-item_price-row">
+                                    <div class="sale-item_item-name">
                                         Мечтательница
                                     </div>
-                                    <div class="sale-list_item-price">
-                                        <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price">
+                                        <div class="sale-item_item-price-true">
                                             2280 грн
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-list_order-btn">Заказать</button>
-                                <a class="sale-list_quick-link">Быстрый заказ</a>
+                                <button class="sale-item_order-btn">Заказать</button>
+                                <a class="sale-item_quick-link">Быстрый заказ</a>
                             </div>
 
                         </div>
-                        <div class="sale-list">
-                            <div class="sale-list_top">
-                                <img class="sale-list_top-img p-0" src="./images/sezon2.png" alt="">
-                                <div class="sale-list_top_top">TOP</div>
+                        <div class="sale-item">
+                            <div class="sale-item_top">
+                                <img class="sale-item_top-img p-0" src="./images/sezon2.png" alt="">
+                                <div class="sale-item_top_top">TOP</div>
                             </div>
-                            <div class="sale-list_bottom lh-1">
+                            <div class="sale-item_bottom lh-1">
                                 <div class="m-top"></div>
-                                <div class="sale-list_price-row mb-2">
-                                    <div class="sale-list_item-name">
+                                <div class="sale-item_price-row mb-2">
+                                    <div class="sale-item_item-name">
                                         Корзина<br>солнечного<br>настроения
                                     </div>
-                                    <div class="sale-list_item-price">
-                                        <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price">
+                                        <div class="sale-item_item-price-true">
                                             1680 грн
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-list_order-btn">Заказать</button>
-                                <a class="sale-list_quick-link">Быстрый заказ</a>
+                                <button class="sale-item_order-btn">Заказать</button>
+                                <a class="sale-item_quick-link">Быстрый заказ</a>
                             </div>
 
                         </div>
-                        <div class="sale-list">
-                            <div class="sale-list_top">
-                                <img class="sale-list_top-img" src="./images/sezon3.png" alt="">
-                                <div class="sale-list_top_top">TOP</div>
-                                <div class="sale-list_bottom"></div>
+                        <div class="sale-item">
+                            <div class="sale-item_top">
+                                <img class="sale-item_top-img" src="./images/sezon3.png" alt="">
+                                <div class="sale-item_top_top">TOP</div>
+                                <div class="sale-item_bottom"></div>
                             </div>
-                            <div class="sale-list_bottom">
+                            <div class="sale-item_bottom">
                                 <div class="retting">
                                     <img src="./images/star.svg" alt="">
                                     <img src="./images/star.svg" alt="">
@@ -689,39 +784,39 @@
                                     <img src="./images/star.svg" alt="">
                                     <img src="./images/star.svg" alt="">
                                 </div>
-                                <div class="sale-list_price-row">
-                                    <div class="sale-list_item-name">
+                                <div class="sale-item_price-row">
+                                    <div class="sale-item_item-name">
                                         Цветочная клумба
                                     </div>
-                                    <div class="sale-list_item-price">
-                                        <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price">
+                                        <div class="sale-item_item-price-true">
                                             1270 грн
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-list_order-btn">Заказать</button>
-                                <a class="sale-list_quick-link">Быстрый заказ</a>
+                                <button class="sale-item_order-btn">Заказать</button>
+                                <a class="sale-item_quick-link">Быстрый заказ</a>
                             </div>
                         </div>
-                        <div class="sale-list">
-                            <div class="sale-list_top">
-                                <img class="sale-list_top-img" src="./images/sezon4.png" alt="">
-                                <div class="sale-list_top_top">TOP</div>
+                        <div class="sale-item">
+                            <div class="sale-item_top">
+                                <img class="sale-item_top-img" src="./images/sezon4.png" alt="">
+                                <div class="sale-item_top_top">TOP</div>
                             </div>
-                            <div class="sale-list_bottom lh-1">
+                            <div class="sale-item_bottom lh-1">
                                 <div class="m-top"></div>
-                                <div class="sale-list_price-row mb-4">
-                                    <div class="sale-list_item-name">
+                                <div class="sale-item_price-row mb-4">
+                                    <div class="sale-item_item-name">
                                         Корзина<br> Дюймовочка
                                     </div>
-                                    <div class="sale-list_item-price">
-                                        <div class="sale-list_item-price-true">
+                                    <div class="sale-item_item-price">
+                                        <div class="sale-item_item-price-true">
                                             2020 грн
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-list_order-btn">Заказать</button>
-                                <a class="sale-list_quick-link">Быстрый заказ</a>
+                                <button class="sale-item_order-btn">Заказать</button>
+                                <a class="sale-item_quick-link">Быстрый заказ</a>
                             </div>
                         </div>
                     </div>
@@ -739,13 +834,13 @@
                             </div>
                         </div>
                         <div class="sale-flowers">
-                            <div class="sale-list">
-                                <div class="sale-list_top">
-                                    <div class="sale-list_top_like"></div>
-                                    <img class="sale-list_top-img" src="./images/prezent1.png" alt="">
-                                    <div class="sale-list_top_top">TOP</div>
+                            <div class="sale-item">
+                                <div class="sale-item_top">
+                                    <div class="sale-item_top_like"></div>
+                                    <img class="sale-item_top-img" src="./images/prezent1.png" alt="">
+                                    <div class="sale-item_top_top">TOP</div>
                                 </div>
-                                <div class="sale-list_bottom">
+                                <div class="sale-item_bottom">
                                     <div class="retting">
                                         <img src="./images/star.svg" alt="">
                                         <img src="./images/star.svg" alt="">
@@ -753,50 +848,50 @@
                                         <img src="./images/star.svg" alt="">
                                         <img src="./images/star.svg" alt="">
                                     </div>
-                                    <div class="sale-list_price-row">
-                                        <div class="sale-list_item-name">
+                                    <div class="sale-item_price-row">
+                                        <div class="sale-item_item-name">
                                             Торт Наполеон
                                         </div>
-                                        <div class="sale-list_item-price">
-                                            <div class="sale-list_item-price-true">
+                                        <div class="sale-item_item-price">
+                                            <div class="sale-item_item-price-true">
                                                 2280 грн
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="sale-list_order-btn">Заказать</button>
-                                    <a class="sale-list_quick-link">Быстрый заказ</a>
+                                    <button class="sale-item_order-btn">Заказать</button>
+                                    <a class="sale-item_quick-link">Быстрый заказ</a>
                                 </div>
 
                             </div>
-                            <div class="sale-list">
-                                <div class="sale-list_top">
-                                    <img class="sale-list_top-img" src="./images/prezent2.png" alt="">
-                                    <div class="sale-list_top_top">TOP</div>
+                            <div class="sale-item">
+                                <div class="sale-item_top">
+                                    <img class="sale-item_top-img" src="./images/prezent2.png" alt="">
+                                    <div class="sale-item_top_top">TOP</div>
                                 </div>
-                                <div class="sale-list_bottom">
+                                <div class="sale-item_bottom">
                                     <div class="m-top"></div>
-                                    <div class="sale-list_price-row">
-                                        <div class="sale-list_item-name">
+                                    <div class="sale-item_price-row">
+                                        <div class="sale-item_item-name">
                                             Киевский торт
                                         </div>
-                                        <div class="sale-list_item-price">
-                                            <div class="sale-list_item-price-true">
+                                        <div class="sale-item_item-price">
+                                            <div class="sale-item_item-price-true">
                                                 1680 грн
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="sale-list_order-btn">Заказать</button>
-                                    <a class="sale-list_quick-link">Быстрый заказ</a>
+                                    <button class="sale-item_order-btn">Заказать</button>
+                                    <a class="sale-item_quick-link">Быстрый заказ</a>
                                 </div>
 
                             </div>
-                            <div class="sale-list">
-                                <div class="sale-list_top">
-                                    <img class="sale-list_top-img" src="./images/prezent3.png" alt="">
-                                    <div class="sale-list_top_top">TOP</div>
-                                    <div class="sale-list_bottom"></div>
+                            <div class="sale-item">
+                                <div class="sale-item_top">
+                                    <img class="sale-item_top-img" src="./images/prezent3.png" alt="">
+                                    <div class="sale-item_top_top">TOP</div>
+                                    <div class="sale-item_bottom"></div>
                                 </div>
-                                <div class="sale-list_bottom">
+                                <div class="sale-item_bottom">
                                     <div class="retting">
                                         <img src="./images/star.svg" alt="">
                                         <img src="./images/star.svg" alt="">
@@ -804,49 +899,49 @@
                                         <img src="./images/star.svg" alt="">
                                         <img src="./images/star.svg" alt="">
                                     </div>
-                                    <div class="sale-list_price-row">
-                                        <div class="sale-list_item-name">
+                                    <div class="sale-item_price-row">
+                                        <div class="sale-item_item-name">
                                             Торт Левантинер
                                         </div>
-                                        <div class="sale-list_item-price">
-                                            <div class="sale-list_item-price-true">
+                                        <div class="sale-item_item-price">
+                                            <div class="sale-item_item-price-true">
                                                 1270 грн
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="sale-list_order-btn">Заказать</button>
-                                    <a class="sale-list_quick-link">Быстрый заказ</a>
+                                    <button class="sale-item_order-btn">Заказать</button>
+                                    <a class="sale-item_quick-link">Быстрый заказ</a>
                                 </div>
 
                             </div>
-                            <div class="sale-list">
-                                <div class="sale-list_top">
-                                    <img class="sale-list_top-img" src="./images/prezent4.png" alt="">
-                                    <div class="sale-list_top_top">TOP</div>
+                            <div class="sale-item">
+                                <div class="sale-item_top">
+                                    <img class="sale-item_top-img" src="./images/prezent4.png" alt="">
+                                    <div class="sale-item_top_top">TOP</div>
                                 </div>
-                                <div class="sale-list_bottom lh-1">
+                                <div class="sale-item_bottom lh-1">
                                     <div class="m-top"></div>
-                                    <div class="sale-list_price-row">
-                                        <div class="sale-list_item-name">
+                                    <div class="sale-item_price-row">
+                                        <div class="sale-item_item-name">
                                             Торт на день <br>рождения
                                         </div>
-                                        <div class="sale-list_item-price">
-                                            <div class="sale-list_item-price-true">
+                                        <div class="sale-item_item-price">
+                                            <div class="sale-item_item-price-true">
                                                 2020 грн
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="sale-list_order-btn">Заказать</button>
-                                    <a class="sale-list_quick-link">Быстрый заказ</a>
+                                    <button class="sale-item_order-btn">Заказать</button>
+                                    <a class="sale-item_quick-link">Быстрый заказ</a>
                                 </div>
                             </div>
-                            <div class="sale-list">
-                                <div class="sale-list_top">
-                                    <div class="sale-list_top_like"></div>
-                                    <img class="sale-list_top-img" src="./images/prezent1.png" alt="">
-                                    <div class="sale-list_top_top">TOP</div>
+                            <div class="sale-item">
+                                <div class="sale-item_top">
+                                    <div class="sale-item_top_like"></div>
+                                    <img class="sale-item_top-img" src="./images/prezent1.png" alt="">
+                                    <div class="sale-item_top_top">TOP</div>
                                 </div>
-                                <div class="sale-list_bottom">
+                                <div class="sale-item_bottom">
                                     <div class="retting">
                                         <img src="./images/star.svg" alt="">
                                         <img src="./images/star.svg" alt="">
@@ -854,50 +949,50 @@
                                         <img src="./images/star.svg" alt="">
                                         <img src="./images/star.svg" alt="">
                                     </div>
-                                    <div class="sale-list_price-row">
-                                        <div class="sale-list_item-name">
+                                    <div class="sale-item_price-row">
+                                        <div class="sale-item_item-name">
                                             Торт Наполеон
                                         </div>
-                                        <div class="sale-list_item-price">
-                                            <div class="sale-list_item-price-true">
+                                        <div class="sale-item_item-price">
+                                            <div class="sale-item_item-price-true">
                                                 2280 грн
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="sale-list_order-btn">Заказать</button>
-                                    <a class="sale-list_quick-link">Быстрый заказ</a>
+                                    <button class="sale-item_order-btn">Заказать</button>
+                                    <a class="sale-item_quick-link">Быстрый заказ</a>
                                 </div>
 
                             </div>
-                            <div class="sale-list">
-                                <div class="sale-list_top">
-                                    <img class="sale-list_top-img" src="./images/prezent2.png" alt="">
-                                    <div class="sale-list_top_top">TOP</div>
+                            <div class="sale-item">
+                                <div class="sale-item_top">
+                                    <img class="sale-item_top-img" src="./images/prezent2.png" alt="">
+                                    <div class="sale-item_top_top">TOP</div>
                                 </div>
-                                <div class="sale-list_bottom">
+                                <div class="sale-item_bottom">
                                     <div class="m-top"></div>
-                                    <div class="sale-list_price-row mb-3">
-                                        <div class="sale-list_item-name">
+                                    <div class="sale-item_price-row mb-3">
+                                        <div class="sale-item_item-name">
                                             Киевский торт
                                         </div>
-                                        <div class="sale-list_item-price">
-                                            <div class="sale-list_item-price-true">
+                                        <div class="sale-item_item-price">
+                                            <div class="sale-item_item-price-true">
                                                 1680 грн
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="sale-list_order-btn">Заказать</button>
-                                    <a class="sale-list_quick-link">Быстрый заказ</a>
+                                    <button class="sale-item_order-btn">Заказать</button>
+                                    <a class="sale-item_quick-link">Быстрый заказ</a>
                                 </div>
 
                             </div>
-                            <div class="sale-list">
-                                <div class="sale-list_top">
-                                    <img class="sale-list_top-img" src="./images/prezent3.png" alt="">
-                                    <div class="sale-list_top_top">TOP</div>
-                                    <div class="sale-list_bottom"></div>
+                            <div class="sale-item">
+                                <div class="sale-item_top">
+                                    <img class="sale-item_top-img" src="./images/prezent3.png" alt="">
+                                    <div class="sale-item_top_top">TOP</div>
+                                    <div class="sale-item_bottom"></div>
                                 </div>
-                                <div class="sale-list_bottom">
+                                <div class="sale-item_bottom">
                                     <div class="retting">
                                         <img src="./images/star.svg" alt="">
                                         <img src="./images/star.svg" alt="">
@@ -905,39 +1000,39 @@
                                         <img src="./images/star.svg" alt="">
                                         <img src="./images/star.svg" alt="">
                                     </div>
-                                    <div class="sale-list_price-row">
-                                        <div class="sale-list_item-name">
+                                    <div class="sale-item_price-row">
+                                        <div class="sale-item_item-name">
                                             Торт Левантинер
                                         </div>
-                                        <div class="sale-list_item-price">
-                                            <div class="sale-list_item-price-true">
+                                        <div class="sale-item_item-price">
+                                            <div class="sale-item_item-price-true">
                                                 1270 грн
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="sale-list_order-btn">Заказать</button>
-                                    <a class="sale-list_quick-link">Быстрый заказ</a>
+                                    <button class="sale-item_order-btn">Заказать</button>
+                                    <a class="sale-item_quick-link">Быстрый заказ</a>
                                 </div>
                             </div>
-                            <div class="sale-list">
-                                <div class="sale-list_top">
-                                    <img class="sale-list_top-img" src="./images/prezent4.png" alt="">
-                                    <div class="sale-list_top_top">TOP</div>
+                            <div class="sale-item">
+                                <div class="sale-item_top">
+                                    <img class="sale-item_top-img" src="./images/prezent4.png" alt="">
+                                    <div class="sale-item_top_top">TOP</div>
                                 </div>
-                                <div class="sale-list_bottom lh-1">
+                                <div class="sale-item_bottom lh-1">
                                     <div class="m-top"></div>
-                                    <div class="sale-list_price-row mb-2">
-                                        <div class="sale-list_item-name">
+                                    <div class="sale-item_price-row mb-2">
+                                        <div class="sale-item_item-name">
                                             Торт на день <br>рождения
                                         </div>
-                                        <div class="sale-list_item-price">
-                                            <div class="sale-list_item-price-true">
+                                        <div class="sale-item_item-price">
+                                            <div class="sale-item_item-price-true">
                                                 2020 грн
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="sale-list_order-btn">Заказать</button>
-                                    <a href="#" class="sale-list_quick-link">Быстрый заказ</a>
+                                    <button class="sale-item_order-btn">Заказать</button>
+                                    <a href="#" class="sale-item_quick-link">Быстрый заказ</a>
                                 </div>
                             </div>
                         </div>
@@ -991,25 +1086,167 @@
             <div class="maps">
                 <iframe class="maps-bg"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10150.743007641617!2d30.493594300721483!3d50.5028061537504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b319865b533d9%3A0xcfa3ddec3fce57e5!2sFLOWERS%20BOUTIQUE!5e0!3m2!1sru!2sua!4v1650909943057!5m2!1sru!2sua"
-                     allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+                <div class="maps__menu">
+                    <div class="maps__menu-top">
+                        <div class="maps__menu-top-img"><img src="./images/logo2.png" alt=""></div>
+                        <div class="maps__menu-top-phone">
+                            <div class="menu__title">
+                                <img src="./images/phone.svg" alt="">
+                                <div class="phone-title">Телефон:</div>
+                            </div>
+                            <div class="phone-number mt-2">+38 (063) 829 30 30</div>
+                            <div class="phone-number mt-2">+38 (067) 829 30 30</div>
+                        </div>
+                    </div>
+
+                    <div class="maps__menu-bottom">
+                        <div class="menu__title">
+                            <img src="./images/skype.svg" alt="">
+                            <div class="phone-title">Skype</div>
+                        </div>
+                        <div class="phone-number mt-3">Flowers-Ukraine</div>
+                        <div class="menu__title mt-3">
+                            <img src="./images/mail.svg" alt="">
+                            <div class="phone-title">Почта</div>
+                        </div>
+                        <div class="phone-number mt-3">flowers.ukraine2014@gmail.com</div>
+                        <div class="maps__menu-navigation mt-3">
+                            <button class="navigation-btn pe-3">
+                                <img class="header__navigation-social-btn" src="./images/instagram.svg" alt="">
+                            </button>
+                            <button class="navigation-btn pe-3">
+                                <img class="header__navigation-social-btn" src="./images/skype1.svg" alt="">
+                            </button>
+                            <button class="navigation-btn pe-3">
+                                <img class="header__navigation-social-btn" src="./images/facebook.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="footer">
-            <div class="row">
-                <div class="logo-header">
+            <div class="row header-top-width footer__border">
+                <div class="col logo-header mt-5">
                     <img src="./images/logo-header.png">
                 </div>
+
+                <div class="col">
+                    <ul>
+                        <div class="col__title">ИНФОРМАЦИЯ</div>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">О НАС</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">ДОСТАВКА И ОПЛАТА</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <div class="col__title">СЛУЖБА ПОДДЕРЖКИ</div>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">КАРТА САЙТА</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">ВОЗВРАТ ТОВАРА</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">СВЯЗАТЬСЯ С НАМИ</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">ДЛЯ СОТРУДНИЧЕСТВА</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <div class="col__title">ЛИЧНЫЙ КАБИНЕТ</div>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">ИСТОРИЯ ЗАКАЗА</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">ЗАКЛАДКИ</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">СПИСОК НОВОСТЕЙ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <div class="col__title" href="">ДОПОЛНИТЕЛЬНО</div>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">ПОДАРОЧНЫЕ</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">СЕРТИФИКАТЫ</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">АКЦИИИ</a>
+                        </li>
+                        <li class="col__list">
+                            <a class="col-listen" href="#">ЦВЕТЫ В ОФИС</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="row"></div>
+            <div class="row header-top-width mt-5 footer-mobile">
+                <div class="col col-listen footer__copyright">Copyright © 2021. Все права защищены</div>
+                <div class="col footer__money">
+                    <ul class="col-listen col-listen-style">
+                        <div class="payment-method-title">Способы оплаты:</div>
+                        <li class="col__list">
+                            <a href="#">
+                                <img src="./images/privat52.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="col__list">
+                            <a href="#">
+                                <img src="./images/liqpay.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="col__list"><a href="#"></a></li>
+                        <li class="col__list">
+                            <a href="#">
+                                <img src="./images/masterCard.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="col__list"><a href="#"></a></li>
+                        <li class="col__list">
+                            <a href="#">
+                                <img src="./images/maestro.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="col__list">
+                            <a href="#">
+                                <img src="./images/visaElectron.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="col__list">
+                            <a href="#">
+                                <img src="./images/visa.svg" alt="">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+            </script>
 
 </body>
 

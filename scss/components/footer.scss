@@ -1,0 +1,70 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.footer {
+    background-color: $bgDark;
+
+    &__border {
+        border-bottom: 2px solid $bgViolet;
+        padding-bottom: 2rem;
+    }
+
+    &__copyright {
+        
+    }
+}
+
+.col {
+    
+    &__title {
+    font-size: $fontSize * 1.125;
+    text-decoration: none;
+    color: $textLight;
+    font-family: $fontMuseoSansCyrl;
+    font-weight: 700;
+    padding: 3rem 0;
+    
+    &:hover {
+        color: $textViolet;
+    }
+    &:active {
+        color: $textViolet;
+    }
+    }
+    &__list {
+        list-style: none;
+    }
+    &-listen {
+        text-decoration: none;
+        color: $textLight;
+        font-family: $fontMuseoSansCyrl;
+        font-size: $fontSize;
+        font-weight: 300;
+
+        &:hover {
+            color: $textViolet;
+        }
+        &:active {
+            color: $textViolet;
+        }
+        &-style {
+            @include d-flex(row, space-between);
+        }
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+    .footer-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .col-listen-style {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .payment-method-title {
+        display: none;
+    }
+}

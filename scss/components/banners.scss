@@ -1,0 +1,262 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.content {
+    max-width: 88.75rem;
+    margin: auto;
+}
+
+.banners {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-height: 42.125rem;
+
+    &__item:nth-child(1) {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    &__item {
+        position: relative;
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-bg1 {
+            background-color: #FFDB6B;
+            @include padding(4px, 0, 0, 2.56rem);
+
+        }
+
+        &-bg2 {
+            background-image: url(../images/bg-box.png);
+            @include padding(2.3rem, 0, 0, 4rem);
+
+        }
+
+        &-title {
+            position: absolute;
+            font-size: $fontSize * 2;
+            font-weight: 700;
+            color: $textDark;
+            top: 2.75rem;
+            right: 1.25rem;
+        }
+    }
+}
+
+.pleft {
+    top: 2rem;
+    left: 1.44rem;
+}
+
+.options {
+    margin-top: 2rem;
+    @include d-flex(row, space-between);
+
+    &__name {
+        position: absolute;
+        font-family: $fontMuseoSansCyrl;
+        font-size: 1.5rem;
+        line-height: 2.19rem;
+        margin: 3.625rem 0 0 0.5rem;
+        color: $textDark;
+
+        &-title {
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            padding-top: 1rem;
+            color: $textGray;
+        }
+
+        &-video {
+            // @include d-flex(column,center);
+            align-items: center;
+            bottom: 1.44rem;
+        }
+
+        &-present {
+            margin: 0;
+            right: 0.5rem;
+            top: 3.625rem;
+            text-align: right;
+        }
+        
+    }
+}
+.options__img {
+    width: 100%;
+}
+.options-link {
+    position: relative;
+}
+
+.color-text {
+    color: $textLight;
+}
+
+
+.button-page {
+    position: absolute;
+    right: 0;
+}
+
+.button-carousel {
+    border: none;
+    background-color: transparent;
+}
+
+.oll__news {
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    color: $textViolet;
+    text-decoration: none;
+    &:hover {
+        color: $textViolet;
+    }
+}
+.forum__list {
+    @include d-flex(row, space-between);
+
+    &-item {
+        position: relative;
+        width: 32%;
+        @include d-flex(column,center);
+  
+    &-bg {
+        position: absolute;
+        z-index: -1;
+        background-color: $bgViolet;
+        width: 100%;
+        height: 80%;
+        bottom: 0;
+    }
+    
+    &-img {
+        padding: 0 24px;
+    }
+    &-title {
+        font-family: $fontMuseoSansCyrl;
+        color: $textLight;
+        font-size: $fontSize * 1.5;
+        line-height: 25px;
+        padding: 2rem 0 1rem 1.6rem;
+
+    }
+    &-descr {
+        font-size: $fontSize;
+        line-height: 18px;
+        color: $textLight;
+        padding: 2rem 0 1rem 1.6rem;
+
+    }
+}
+}
+
+.maps {
+    position: relative;
+    margin-top: 5rem;
+
+    &-bg {
+    width: 100%;
+    height: 508px;
+    }
+
+    &__menu{
+        position: absolute;
+        right: 13.75rem;
+        top: 0;
+        bottom: 0;
+
+        &-top {
+        background-color: $textLight;
+        position:relative;
+        width: 23.75rem;
+        height: 50%;
+        overflow:hidden;
+        clip-path: polygon(
+          0 0,
+          0 0,
+          100% 0,
+          100% 0,
+          100% 90%,
+          90% 100%,
+          10% 100%,
+          0% 90%,
+          0% 10%);
+            
+          &-img{
+              text-align: center;
+              margin: 1.5rem 0 2.625rem;
+          }
+          &-phone {
+            padding: 0 0 0 4.5rem;
+
+          }
+        }
+
+        &-bottom {
+            background-color: $textLight;
+            position:relative;
+            width: 23.75rem;
+            height: 50%;
+            overflow:hidden;
+            clip-path: polygon(
+              0 10%,
+              10% 0,
+              90% 0,
+              100% 10%,
+              100% 100%,
+              0 100%,
+              0 100%,
+              0 0,
+              0 0);
+            padding: 1.5rem 0 0 4.5rem;
+            top: -1px;
+            }
+    }
+}
+.menu__title {
+    display: flex;
+}
+.phone-title {
+    font-family: $font;
+    font-size: $fontSize;
+    font-weight: 400;
+    line-height: 18px;
+    color: $textDark;
+    padding-left: 1rem;
+
+}
+.phone-number {
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    line-height: 18px;
+    font-weight: 300;
+    color: $textGray;
+}
+
+.carousel-indicators {
+
+  
+    [data-bs-target] {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+    }
+  
+    .active {
+      //opacity: $carousel-indicator-active-opacity;
+    }
+  }
+
+
+  @media only screen and (min-width:320px) and (max-width:768px) {
+    .options.mobile {
+        @include d-flex(row, space-between);
+    }
+  }
