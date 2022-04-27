@@ -24,7 +24,7 @@
 
 .dropdown-chevron-left::after {
   content: "";
-  background-image: url("../images/shevron-left.svg");
+  background-image: url(/images/shevron-left.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 15px;
@@ -37,5 +37,11 @@
   bottom: 0;
 }
 .dropdown-chevron-left:hover::after {
-  background-image: url("../images/shevron-right.svg");
+  background-image: url("/images/shevron-right.svg");
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .dropdown-chevron-left::after {
+    background-image: url("/images/shevron-right_white.svg");
+  }
 }

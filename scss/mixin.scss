@@ -1,9 +1,12 @@
-@mixin d-flex($dir, $jc: normal) {
+@mixin d-flex($dir, $jc: normal, $alignItems: normal) {
     display: flex;
     flex-direction: $dir;
 
     @if $jc != normal {
         justify-content: $jc;
+    }
+    @if $alignItems != normal {
+        align-items: $alignItems;
     }
 }
 

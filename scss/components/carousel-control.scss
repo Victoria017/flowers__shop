@@ -1,0 +1,27 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.carousel-control {
+    @include d-flex(row, center, center);
+
+    &__item {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        @include d-flex(row, center, center);
+        margin: 2px;
+
+        &.active {
+            border: 1px solid $bgViolet;
+        }
+
+        &::after {
+            content: '';
+            display: inline-flex;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: $bgViolet;
+        }
+    }
+}

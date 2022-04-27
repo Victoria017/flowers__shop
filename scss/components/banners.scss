@@ -249,14 +249,86 @@
       border-radius: 50%;
     }
   
-    .active {
-      //opacity: $carousel-indicator-active-opacity;
-    }
-  }
+}
 
 
   @media only screen and (min-width:320px) and (max-width:768px) {
     .options.mobile {
         @include d-flex(row, space-between);
     }
-  }
+    .options__name {
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 15px;
+        color: $textDark;
+        margin-top: 0.5rem;
+        left: 0;
+        right: 0;
+        
+    }
+    .forum__list{
+        display: flex;
+        flex-direction: column;
+        &-item {
+        width: 100%;
+    }
+}
+    .maps__menu {
+        left: 0;
+        right: 0;
+        top: 13rem;
+
+
+        &-top {
+            width: 90%;
+            margin: auto;
+
+            &-img {
+                margin: 1.4rem 0;
+            }
+            &-phone {
+                padding: 0 0 0 1rem;
+                @include d-flex(row, center, start);
+
+            }
+            
+        }
+        &-bottom {
+            width: 90%;
+            margin: auto;
+
+        }
+    }
+    .menu__title-imgMobile {
+        width: 3.7rem;
+    }
+    .phoneForMobile {
+        @include d-flex (column, center, end);
+    }
+    .phone-number {
+        font-size: 12px;
+        padding-right: 0.5rem;
+    }
+    .phone-title {
+        font-size: 12px;
+
+    }
+    .menu__title  {
+        margin-top: 0.5rem;
+    }
+    .maps__menu-bottom {
+    padding: 1.5rem 0 0 1.5rem;
+    height: auto;
+    padding-bottom: 2rem;
+
+    &-mobile {
+        @include d-flex(row, start, end);
+    }
+}
+.maps__menu-navigation {
+    @include d-flex(row,center);
+}
+    .fs-footer {
+        font-size: 14px;
+    }
+}

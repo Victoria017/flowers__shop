@@ -10,6 +10,7 @@
     justify-content: center;
     position: relative;
 }
+
 .sale-flowers {
     @include d-flex(row, space-between);
     flex-wrap: wrap;
@@ -33,10 +34,11 @@
             height: 3.5rem;
             border: 1px dashed #E72222;
             font-size: $fontSize;
-            @include padding(17px, 5px, 18px, 10px);
             border-radius: 45px;
             position: absolute;
-            margin: 6px 20px;
+            top: 6px;
+            left: 20px;
+            @include d-flex(column, center, center);
         }
 
         &_like {
@@ -65,12 +67,12 @@
             border-radius: 45px;
             width: 3.5rem;
             height: 3.5rem;
+            color: $textViolet;
             position: absolute;
             right: 0.8rem;
             bottom: 1.7rem;
             margin: auto;
-            @include d-flex(column, center);
-            align-items: center;
+            @include d-flex(column, center, center);
         }
     }
 
@@ -159,7 +161,93 @@
 
     .sale-item {
         width: calc(50% - 8px);
+        display: none;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            display: flex;
+        }
+
+        &_top {
+            &_item {
+                width: 2rem;
+                height: 2rem;
+                font-size: $fontSize * 0.6;
+                top: 4px;
+                left: 4px;
+            }
+
+            &_top {
+                width: 2.2rem;
+                height: 2.2rem;
+                bottom: 0.5rem;
+                right: 0.5rem;
+
+            }
+
+            &_like {
+                width: 14px;
+                height: 12px;
+                top: 11px;
+                right: 6px;
+            }
+            
+        }
+    }
+
+    .sale-header {
+        font-size: 24px;
+        padding: 3rem 0 2rem;
+        @include d-flex (column,center,center);
 
     }
 
+    .retting {
+        margin-left: 0;
+    }
+
+    .sale-item_item-name {
+        padding-bottom: 1rem;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .sale-item_item-price {
+        font-size: 14px;
+
+    }
+    .sale-item_price-row {
+        @include d-flex(column, center, center);
+        left: 0;
+        right: 0;
+        margin: 0.8rem auto;
+    }
+    .sale-item_quick-link {
+        font-size: 10px;
+    }
+    .button__mobile {
+        background-color: $bgViolet;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+    .sale-item__footer {
+        @include d-flex (row, space-between, center);
+        padding: 0 11px 0 9px;
+        margin-top: auto 
+    }
+    .sale-item_bottom {
+        @include d-flex (column);
+        flex-grow: 1;
+    }
+    .button__card {
+        display: inline-block !important;
+    }
+    html, body {
+        margin: 0px;
+        padding: 0px;
+        background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
+    }
+    
 }

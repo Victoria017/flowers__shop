@@ -37,13 +37,14 @@
   height: 3.5rem;
   border: 1px dashed #E72222;
   font-size: 1rem;
-  padding-top: 17px;
-  padding-right: 5px;
-  padding-bottom: 18px;
-  padding-left: 10px;
   border-radius: 45px;
   position: absolute;
-  margin: 6px 20px;
+  top: 6px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sale-item_top_like {
   background-image: url(../images/heart.svg);
@@ -70,6 +71,7 @@
   border-radius: 45px;
   width: 3.5rem;
   height: 3.5rem;
+  color: #956D84;
   position: absolute;
   right: 0.8rem;
   bottom: 1.7rem;
@@ -161,5 +163,97 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .sale-item {
     width: calc(50% - 8px);
+    display: none;
+  }
+  .sale-item:nth-child(1), .sale-item:nth-child(2), .sale-item:nth-child(3), .sale-item:nth-child(4) {
+    display: flex;
+  }
+  .sale-item_top_item {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.6rem;
+    top: 4px;
+    left: 4px;
+  }
+  .sale-item_top_top {
+    width: 2.2rem;
+    height: 2.2rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+  .sale-item_top_like {
+    width: 14px;
+    height: 12px;
+    top: 11px;
+    right: 6px;
+  }
+
+  .sale-header {
+    font-size: 24px;
+    padding: 3rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .retting {
+    margin-left: 0;
+  }
+
+  .sale-item_item-name {
+    padding-bottom: 1rem;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .sale-item_item-price {
+    font-size: 14px;
+  }
+
+  .sale-item_price-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 0.8rem auto;
+  }
+
+  .sale-item_quick-link {
+    font-size: 10px;
+  }
+
+  .button__mobile {
+    background-color: #956D84;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  .sale-item__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11px 0 9px;
+    margin-top: auto;
+  }
+
+  .sale-item_bottom {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .button__card {
+    display: inline-block !important;
+  }
+
+  html, body {
+    margin: 0px;
+    padding: 0px;
+    background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
   }
 }

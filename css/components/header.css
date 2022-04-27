@@ -80,6 +80,7 @@
 }
 .header__list-link:hover {
   color: #956D84;
+  background-color: transparent;
 }
 
 .hover-link:hover {
