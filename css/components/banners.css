@@ -50,6 +50,7 @@
 }
 
 .options {
+  width: 100%;
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
@@ -86,6 +87,7 @@
 
 .options-link {
   position: relative;
+  width: calc(33.33% - 22px);
 }
 
 .color-text {
@@ -151,7 +153,7 @@
 
 .maps {
   position: relative;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 .maps-bg {
   width: 100%;
@@ -297,7 +299,7 @@
   .maps__menu-bottom-mobile {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: end;
   }
 
@@ -309,5 +311,17 @@
 
   .fs-footer {
     font-size: 14px;
+  }
+
+  .forum__list-item-img {
+    width: 100%;
+  }
+  .forum__list-item-title {
+    font-size: 14px;
+    padding: 1rem;
+  }
+  .forum__list-item-descr {
+    font-size: 12px;
+    padding: 0rem 0 1rem 1rem;
   }
 }

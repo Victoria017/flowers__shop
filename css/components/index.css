@@ -50,6 +50,7 @@
 }
 
 .options {
+  width: 100%;
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
@@ -86,6 +87,7 @@
 
 .options-link {
   position: relative;
+  width: calc(33.33% - 22px);
 }
 
 .color-text {
@@ -151,7 +153,7 @@
 
 .maps {
   position: relative;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 .maps-bg {
   width: 100%;
@@ -297,7 +299,7 @@
   .maps__menu-bottom-mobile {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: end;
   }
 
@@ -309,6 +311,18 @@
 
   .fs-footer {
     font-size: 14px;
+  }
+
+  .forum__list-item-img {
+    width: 100%;
+  }
+  .forum__list-item-title {
+    font-size: 14px;
+    padding: 1rem;
+  }
+  .forum__list-item-descr {
+    font-size: 12px;
+    padding: 0rem 0 1rem 1rem;
   }
 }
 .dropdown-menu li {
@@ -350,12 +364,12 @@
   bottom: 0;
 }
 .dropdown-chevron-left:hover::after {
-  background-image: url("/images/shevron-right.svg");
+  background-image: url(/images/shevron-right.svg);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .dropdown-chevron-left::after {
-    background-image: url("/images/shevron-right_white.svg");
+    background-image: url(/images/shevron-right_white.svg);
   }
 }
 .footer {
@@ -402,25 +416,233 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .footer__money {
+    width: 100%;
+  }
+
   .footer-mobile {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .col-listen-style {
     display: flex;
-    flex-wrap: wrap-reverse;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
   }
 
   .payment-method-title {
     display: none;
   }
 
+  .col__list {
+    width: calc(33% - 12px);
+    text-align: center;
+    padding: 0.7rem 0;
+  }
+
   .col-listen {
     font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-top-width {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+.catalog__title {
+  color: #333333;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.catalog__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.catalog__menu-filter {
+  font-size: 18px;
+  font-family: MuseoSansCyrl, sans-serif;
+}
+.catalog__menu-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.catalog__link {
+  color: #333333;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.catalog__link:hover, .catalog__link:active, .catalog__link:focus {
+  color: #333333;
+  font-weight: bold;
+}
+
+.catalog__menu-whom-item {
+  color: #828282;
+}
+
+.dropdown__catalog-chevron-bottom::after {
+  content: "";
+  background-image: url("/images/chevron_bottom.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 7px;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.dropdown__catalog-chevron-bottom:hover::after {
+  background-image: url("/images/chevron_top.svg");
+}
+
+.header__list-link-checkbox {
+  display: none;
+}
+
+.header__list-link-check {
+  visibility: hidden;
+}
+
+.header__list-link-checkbox:checked + .header__list-link-check {
+  visibility: visible;
+}
+
+.content__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0 6rem;
+}
+
+.page-link {
+  color: #B0B9C0;
+  border: none;
+  font-size: 1.5rem;
+  font-family: EuclidCircularB-Regular, sans-serif;
+  padding: 0.575rem 1.3rem;
+}
+.page-link:hover {
+  color: #ffffff;
+  background-color: #D6C5CF;
+}
+
+.page-link-chevron:hover {
+  background-color: transparent;
+}
+
+.content-info {
+  background-color: #FBF9FA;
+  width: 100%;
+  height: auto;
+  padding: 6rem;
+}
+.content-info-item {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+.content-info-title {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 2.25rem;
+  color: #956D84;
+  padding: 6rem 0 3rem;
+  text-align: center;
+}
+.content-info-link {
+  font-family: EuclidCircularB-Regular, sans-serif;
+  font-size: 1.125rem;
+  color: #956D84;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 4rem;
+}
+.content-info-link:hover {
+  color: #956D84;
+  font-weight: bold;
+}
+
+.dropdown-menu > li:hover {
+  background-color: transparent;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active {
+  font-weight: bold;
+  background-color: transparent;
+  color: #956D84;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .catalog__filter-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .catalog__title {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .btn-title {
+    background: #956D84;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+
+  .btn-title_2 {
+    color: #956D84;
+    font-size: 14px;
+    border: 1px solid #956D84;
+    width: calc(50% - 22px);
+  }
+
+  .page-link {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .content__menu {
+    padding-bottom: 2rem;
+  }
+
+  .content-info {
+    padding: 1rem;
+  }
+  .content-info-item {
+    font-size: 14px;
+  }
+  .content-info-title {
+    font-size: 20px;
+    padding: 3rem 1rem;
+  }
+  .content-info-link {
+    font-size: 14px;
+    padding: 2rem 0;
   }
 }
 .header {
+  flex-direction: column;
   font-family: MuseoSansCyrl, sans-serif;
   font-size: 1rem;
   color: #ffffff;
@@ -601,19 +823,7 @@
   font-family: MuseoSansCyrl, sans-serif;
 }
 
-.mobile {
-  display: none;
-}
-
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
-
   .header-bottom {
     justify-content: space-between;
   }
@@ -623,7 +833,15 @@
   }
 
   .circle-violet {
-    width: 6px;
+    font-size: 0.5em;
+  }
+
+  .badge-mobile {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 8px;
+    background-color: #956D84;
   }
 }
 .sale-header {
@@ -655,6 +873,9 @@
   flex-direction: column;
   width: calc(25% - 18px);
   margin-top: 20px;
+}
+.catalog .sale-item {
+  width: calc(33.333% - 8px);
 }
 .sale-item_top {
   background-color: #FBF9FA;
@@ -793,6 +1014,10 @@
     width: calc(50% - 8px);
     display: none;
   }
+  .catalog .sale-item {
+    width: calc(50% - 8px);
+    display: flex;
+  }
   .sale-item:nth-child(1), .sale-item:nth-child(2), .sale-item:nth-child(3), .sale-item:nth-child(4) {
     display: flex;
   }
@@ -885,7 +1110,51 @@
     background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
   }
 }
+.modal-btn {
+  font-family: MuseoSansCyrl, sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0.5rem 0.8rem;
+}
+
+.modal__list-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.modal__list-group-item {
+  border: none;
+  color: #333333;
+  font-size: 1rem;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-weight: 400;
+}
+
+.badge-item {
+  color: #956D84;
+  font-size: 1rem;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-weight: 400;
+}
+
+.catalog.nav-link:focus, .nav-link:hover {
+  color: #333333;
+}
+
+.modal-header {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.btn-close {
+  color: #ffffff;
+}
+
 .carousel-control {
+  display: flex !important;
   display: flex;
   flex-direction: row;
   justify-content: center;

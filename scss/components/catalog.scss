@@ -1,0 +1,181 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.catalog__title {
+    color: $textDark;
+    font-family: $fontMuseoSansCyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.catalog__menu {
+    @include d-flex(row, space-between);
+    &-filter{
+        font-size: 18px;
+        font-family: $fontMuseoSansCyrl;
+
+    }
+    &-center {
+    @include d-flex(row, space-between);
+
+    }
+}
+.catalog__link {
+    color: $textDark;
+    font-size: 1.25rem;
+    font-weight: 400;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $textDark;
+        font-weight: bold;
+    }
+}
+.catalog__menu-whom-item {
+    color: $textGray;
+
+}
+
+.dropdown__catalog-chevron-bottom::after {
+    content: "";
+    background-image: url("/images/chevron_bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 7px;
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .dropdown__catalog-chevron-bottom:hover::after {
+    background-image: url("/images/chevron_top.svg");
+  }
+
+  .header__list-link-checkbox {
+    display: none;
+  }
+  .header__list-link-check {
+    visibility: hidden;
+  }
+
+  .header__list-link-checkbox:checked + .header__list-link-check {
+    visibility: visible;
+    
+  }
+
+  .content__menu {
+      @include d-flex(column,center,center);
+      padding: 4.5rem 0 6rem;
+  }
+  .page-link {
+      color: #B0B9C0;
+      border: none;
+      font-size: $fontSize * 1.5;
+      font-family: $font;
+      padding: 0.575rem 1.3rem;
+
+      &:hover {
+          color: $textLight;
+          background-color: #D6C5CF;
+      }
+}
+.page-link-chevron {
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.content-info {
+    background-color: #FBF9FA;
+    width: 100%;
+    height: auto;
+    padding: 6rem;
+    &-item {
+        font-family: $fontMuseoSansCyrl;
+        font-size: $fontSize;
+        color: $textDark;
+        
+    }
+    &-title {
+        font-family: $fontMuseoSansCyrl;
+        font-size: $fontSize * 2.25;
+        color: $textViolet;
+        padding: 6rem 0 3rem;
+        text-align: center;
+    }
+    &-link {
+        font-family: $font;
+        font-size: $fontSize * 1.125;
+        color: $textViolet;
+        @include d-flex (row, center);
+        padding-top: 4rem;
+
+        &:hover {
+            color: $textViolet;
+            font-weight: bold;
+        }
+    }
+}
+.dropdown-menu > li:hover {
+    background-color: transparent;
+}
+.dropdown-item:hover,
+.dropdown-item:active {
+    font-weight: bold;
+    background-color: transparent;
+    color: $textViolet;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .catalog__filter-btn {
+        @include d-flex(row, space-evenly);
+
+    }
+    .catalog__title {
+        margin-bottom: 0;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .btn-title {
+    background: $bgViolet;
+    border-radius: 5px;
+    color: $textLight;
+
+    }
+    .btn-title_2 {
+        color: $textViolet;
+        font-size: 14px;
+        border: 1px solid $bgViolet;
+        width: calc(50% - 22px);
+
+    }
+    .page-link {
+        padding: 0.5rem;
+        font-size: $fontSize;
+    }
+    .content__menu {
+        padding-bottom: 2rem;
+    }
+    .content-info {
+        padding: 1rem;
+
+        &-item {
+            font-size: 14px;
+        }
+        &-title {
+            font-size: 20px;
+            padding: 3rem 1rem;
+
+        }
+        &-link {
+            font-size: 14px;
+            padding: 2rem 0;
+        }
+    }
+}

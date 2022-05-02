@@ -39,7 +39,7 @@
     }
 
     &:hover::after {
-        background-image: url('/images/shevron-right.svg');
+        background-image: url(/images/shevron-right.svg);
 
     }
 }
@@ -48,7 +48,7 @@
 
     .dropdown-chevron-left {
         &::after {
-            background-image: url('/images/shevron-right_white.svg');
+            background-image: url(/images/shevron-right_white.svg);
         }
     }
 }

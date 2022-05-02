@@ -1,0 +1,42 @@
+.modal-btn {
+  font-family: MuseoSansCyrl, sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0.5rem 0.8rem;
+}
+
+.modal__list-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.modal__list-group-item {
+  border: none;
+  color: #333333;
+  font-size: 1rem;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-weight: 400;
+}
+
+.badge-item {
+  color: #956D84;
+  font-size: 1rem;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-weight: 400;
+}
+
+.catalog.nav-link:focus, .nav-link:hover {
+  color: #333333;
+}
+
+.modal-header {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.btn-close {
+  color: #ffffff;
+}

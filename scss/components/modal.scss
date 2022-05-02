@@ -1,0 +1,40 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.modal-btn {
+    font-family: $fontMuseoSansCyrl;
+    color: $textLight;
+    font-size: 12px;
+    padding: 0.5rem 0.8rem;
+}
+.modal__list-group {
+    @include d-flex(column,center);
+    padding-left: 0;
+    margin-bottom: 0;
+
+}
+.modal__list-group-item {
+    border: none;
+    color: $textDark;
+    font-size: $fontSize;
+    font-family: $fontMuseoSansCyrl;
+    font-weight: 400;
+}
+.badge-item {
+    color: $textViolet;
+    font-size: $fontSize;
+    font-family: $fontMuseoSansCyrl;
+    font-weight: 400;
+
+}
+
+.catalog.nav-link:focus, .nav-link:hover {
+    color: $textDark;
+}
+.modal-header {
+    background-color: $bgDark;
+    color: $textLight;
+}
+.btn-close {
+    color: $textLight;
+}

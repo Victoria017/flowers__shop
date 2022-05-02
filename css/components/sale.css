@@ -28,6 +28,9 @@
   width: calc(25% - 18px);
   margin-top: 20px;
 }
+.catalog .sale-item {
+  width: calc(33.333% - 8px);
+}
 .sale-item_top {
   background-color: #FBF9FA;
   position: relative;
@@ -164,6 +167,10 @@
   .sale-item {
     width: calc(50% - 8px);
     display: none;
+  }
+  .catalog .sale-item {
+    width: calc(50% - 8px);
+    display: flex;
   }
   .sale-item:nth-child(1), .sale-item:nth-child(2), .sale-item:nth-child(3), .sale-item:nth-child(4) {
     display: flex;

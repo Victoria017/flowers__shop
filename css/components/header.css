@@ -1,4 +1,5 @@
 .header {
+  flex-direction: column;
   font-family: MuseoSansCyrl, sans-serif;
   font-size: 1rem;
   color: #ffffff;
@@ -179,19 +180,7 @@
   font-family: MuseoSansCyrl, sans-serif;
 }
 
-.mobile {
-  display: none;
-}
-
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
-
   .header-bottom {
     justify-content: space-between;
   }
@@ -201,6 +190,14 @@
   }
 
   .circle-violet {
-    width: 6px;
+    font-size: 0.5em;
+  }
+
+  .badge-mobile {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 8px;
+    background-color: #956D84;
   }
 }
