@@ -1,0 +1,164 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.basket-item {
+    border: 1px solid $bgViolet;
+    @include d-flex(row, normal, center);
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    color: $textDark;
+    text-align: center;
+    margin-bottom: 1rem;
+    &-img {
+        width: 150px;
+        &-bg {
+            width: 75%;
+            max-width: 75px;
+        }
+    }
+    &-price {
+        width: 15%;
+    }
+    &-title {
+        font-weight: bold;
+        width: calc(100% - 75px - 60%);
+    }
+    &-ollPrice {
+        font-weight: bold;
+        width: 15%;
+    }
+    &-piece {
+        width: 15%;
+        @include d-flex(row, center);
+        
+    }
+    &-obj {
+        width: 15%;
+
+    }
+}
+
+.basket-price-false {
+    color: $textLightGray;
+    text-decoration-line: line-through;
+
+}
+.page-link-piece {
+    border: none;
+    background-color: transparent;
+    color: $textDark;
+
+}
+.pagination-basket {
+    border: 1px solid $bgViolet;
+    @include d-flex(row, center, center);
+        
+}
+.basket-menu{
+    display: flex;
+    margin-left: 150px;
+    &-title {
+        width: calc(100% - 60% - 150px);
+    }
+    &-item{
+        width: 15%;        
+    }
+
+}
+.basket-head {
+    @include d-flex(row, space-around, center);
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    color: $textLightGray;
+    text-align: center;
+    margin-bottom: 1rem;
+    &:hover {
+        color: $textViolet;
+    }
+}
+.basket-head-right {
+    @include d-flex(row, end);
+   
+}
+.basket-item-dsc {
+    padding: 0 3rem;
+    text-align: left;
+}
+.title-bas {
+    font-family: $fontMuseoSansCyrl;
+    font-weight: bold;
+    font-size: 36px;
+    color: $textViolet;
+    &-name,
+    &-price {
+        font-family: $fontMuseoSansCyrl;
+        font-size: $fontSize;
+        color: $textLightGray;
+    }
+    &-oll {
+        font-size: 24px;
+        color: $textDark;
+    }
+    &-oll_price {
+        font-size: 24px;
+        font-weight: bold;
+        color: $textDark;
+
+    }
+
+}
+
+.title-bas-price {
+    color: $textDark;
+}
+.basket-btn {
+    font-size: 1rem;
+}
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+    .basket-item-img {
+        width: 25%;
+    }
+    .basket-item-piece {
+        width: 40%;
+        @include d-flex(column,center);
+    }
+    .basket-item-obj {
+        width: 35%;
+    }
+    .text-start {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .btn-mobile-basket {
+        display: flex;
+    }
+    .oll__price_mobile {
+        @include d-flex(row, center,end);
+    }
+    .btn-mobile-basket {
+        @include d-flex(row, center,end);
+
+    }
+    .btn-mobile-basket>button {
+        padding: 0;
+    }
+    .page-link {
+        padding: 0 0.5rem;
+    }
+    .text-top {
+        margin-top: 0.5rem;
+    }
+    .title-bas {
+        font-size: 24px;
+    }
+    .basket-item-dsc {
+        padding: 0.5rem 4rem;
+    }
+    .recommendations {
+        .sale-item:nth-child(3),
+        .sale-item:nth-child(4) {
+            display: none;
+        }
+    }
+}

@@ -226,5 +226,12 @@
         font-size: 8px;
         background-color: $bgViolet;
     }
+    .border-menu-left{
+        border-right: 1px solid $textViolet;
+    }
+    .border-menu-right {
+        border-left: 1px solid $textViolet;
+        
+    }
 
 }

@@ -28,8 +28,14 @@
 
 }
 
-.catalog.nav-link:focus, .nav-link:hover {
+.catalog.nav-link:focus {
     color: $textDark;
+}
+.catalog.nav-link:hover {
+    color: $textViolet;
+}
+.nav-link:visited {
+    color: $textViolet;
 }
 .modal-header {
     background-color: $bgDark;
@@ -37,4 +43,7 @@
 }
 .btn-close {
     color: $textLight;
+}
+.border-btn {
+    border-bottom: 1px solid $textViolet;
 }

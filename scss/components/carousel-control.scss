@@ -2,7 +2,6 @@
 @import '../mixin.scss';
 
 .carousel-control {
-    display: flex!important;
     @include d-flex(row, center, center);
 
     &__item {

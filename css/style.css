@@ -594,6 +594,13 @@
   color: #956D84;
 }
 
+.breadcrump-link {
+  color: #828282;
+}
+.breadcrump-link:hover {
+  color: #956D84;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .catalog__filter-btn {
     display: flex;
@@ -604,7 +611,8 @@
   .catalog__title {
     margin-bottom: 0;
     font-size: 24px;
-    font-weight: 400;
+    margin-top: 2rem;
+    font-weight: bold;
   }
 
   .btn-title {
@@ -642,6 +650,10 @@
   .content-info-link {
     font-size: 14px;
     padding: 2rem 0;
+  }
+
+  .border-end {
+    color: #956D84;
   }
 }
 .header {
@@ -845,6 +857,14 @@
     border-radius: 50%;
     font-size: 8px;
     background-color: #956D84;
+  }
+
+  .border-menu-left {
+    border-right: 1px solid #956D84;
+  }
+
+  .border-menu-right {
+    border-left: 1px solid #956D84;
   }
 }
 .sale-header {
@@ -1143,8 +1163,16 @@
   font-weight: 400;
 }
 
-.catalog.nav-link:focus, .nav-link:hover {
+.catalog.nav-link:focus {
   color: #333333;
+}
+
+.catalog.nav-link:hover {
+  color: #956D84;
+}
+
+.nav-link:visited {
+  color: #956D84;
 }
 
 .modal-header {
@@ -1156,8 +1184,199 @@
   color: #ffffff;
 }
 
+.border-btn {
+  border-bottom: 1px solid #956D84;
+}
+
+.basket-item {
+  border: 1px solid #956D84;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.basket-item-img {
+  width: 150px;
+}
+.basket-item-img-bg {
+  width: 75%;
+  max-width: 75px;
+}
+.basket-item-price {
+  width: 15%;
+}
+.basket-item-title {
+  font-weight: bold;
+  width: calc(100% - 75px - 60%);
+}
+.basket-item-ollPrice {
+  font-weight: bold;
+  width: 15%;
+}
+.basket-item-piece {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.basket-item-obj {
+  width: 15%;
+}
+
+.basket-price-false {
+  color: #BDBDBD;
+  text-decoration-line: line-through;
+}
+
+.page-link-piece {
+  border: none;
+  background-color: transparent;
+  color: #333333;
+}
+
+.pagination-basket {
+  border: 1px solid #956D84;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-menu {
+  display: flex;
+  margin-left: 150px;
+}
+.basket-menu-title {
+  width: calc(40% - 150px);
+}
+.basket-menu-item {
+  width: 15%;
+}
+
+.basket-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  color: #BDBDBD;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.basket-head:hover {
+  color: #956D84;
+}
+
+.basket-head-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.basket-item-dsc {
+  padding: 0 3rem;
+  text-align: left;
+}
+
+.title-bas {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #956D84;
+}
+.title-bas-name, .title-bas-price {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  color: #BDBDBD;
+}
+.title-bas-oll {
+  font-size: 24px;
+  color: #333333;
+}
+.title-bas-oll_price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.title-bas-price {
+  color: #333333;
+}
+
+.basket-btn {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .basket-item-img {
+    width: 25%;
+  }
+
+  .basket-item-piece {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .basket-item-obj {
+    width: 35%;
+  }
+
+  .text-start {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .btn-mobile-basket {
+    display: flex;
+  }
+
+  .oll__price_mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .btn-mobile-basket {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .btn-mobile-basket > button {
+    padding: 0;
+  }
+
+  .page-link {
+    padding: 0 0.5rem;
+  }
+
+  .text-top {
+    margin-top: 0.5rem;
+  }
+
+  .title-bas {
+    font-size: 24px;
+  }
+
+  .basket-item-dsc {
+    padding: 0.5rem 4rem;
+  }
+
+  .recommendations .sale-item:nth-child(3),
+.recommendations .sale-item:nth-child(4) {
+    display: none;
+  }
+}
 .carousel-control {
-  display: flex !important;
   display: flex;
   flex-direction: row;
   justify-content: center;

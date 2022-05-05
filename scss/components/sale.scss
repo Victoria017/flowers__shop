@@ -106,7 +106,7 @@
 .sale-item_item-price {
 
     &-false {
-        color: #BDBDBD;
+        color: $textLightGray;
         text-decoration: line-through;
     }
 

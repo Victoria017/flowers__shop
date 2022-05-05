@@ -200,4 +200,12 @@
     font-size: 8px;
     background-color: #956D84;
   }
+
+  .border-menu-left {
+    border-right: 1px solid #956D84;
+  }
+
+  .border-menu-right {
+    border-left: 1px solid #956D84;
+  }
 }
