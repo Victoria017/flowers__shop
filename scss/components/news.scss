@@ -1,0 +1,11 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+    .forum__list-item {
+        margin-bottom: 1.5rem;
+    }
+
+}

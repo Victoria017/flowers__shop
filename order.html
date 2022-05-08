@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 
   <title>Home</title>
@@ -258,16 +256,16 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-hover active" aria-current="page" href="#">Форум</a>
+                      <a class="nav-link nav-link-hover active" aria-current="page" href="forum.html">Форум</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-hover" href="#">Отзывы</a>
+                      <a class="nav-link nav-link-hover" href="reviews.html">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-hover" href="#">Акции</a>
+                      <a class="nav-link nav-link-hover" href="shares.html">Акции</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-hover" href="#">Новости</a>
+                      <a class="nav-link nav-link-hover" href="news.html">Новости</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle d-inline-block nav-link-hover" href="#" role="button"
@@ -306,14 +304,14 @@
           </div>
           <div class="header__navigation-phone">+38 (067) 829 30 30</div>
           <div class="header__navigation-menu">
-            <a class="header__list header__navigation-menu-favorite" href="#">
+            <a class="header__list header__navigation-menu-favorite" href="basket.html">
               <img class="favorite-img" src="./images/heart.svg" alt="">
               <span class="translate-middle badge rounded-pill circle-violet">2</span>
             </a>
             <a class="header__list header__navigation-menu-favorite" href="basket.html">
               <img class="favorite-img" src="./images/basket.svg" alt="">
             </a>
-            <a class="header__list favorite-price">&#8372; 1 520</a>
+            <a class="favorite-price">&#8372; 1 520</a>
           </div>
         </div>
       </div>
@@ -645,7 +643,7 @@
           </div>
 
           <div class="logo">
-            <img src="./images/logo.png">
+            <a href="index.html"><img src="./images/logo.png"></a>
           </div>
 
           <div class="header__navigation">
@@ -665,595 +663,456 @@
 
     <!-- content -->
 
-    <div class="content">
+    <div class="content content__p">
       <nav class="desktop" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a class="breadcrump-link" href="index.html">Главная</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a class="breadcrump-link" href="basket.html">Корзина</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Оформление заказа</li>
         </ol>
       </nav>
-      <div class="catalog__title">Корзина</div>
+      <div class="catalog__title">Оформление заказа</div>
 
-      <div class="row">
-        <div class="col-12 col-sm-9 basket">
-          <div class="basket-head desktop">
-            <div class="basket-item-img">
+      <div class="row g-0">
+        <div class="col-12 col-sm-9 basket pe-3">
+          <div class="order__menu">
+            <div class="row g-0 order__menu-title">1. Контакты получателя</div>
+            <div class="display-mobile row g-0 pb-4">
+              <div class="col input-group flex-nowrap">
+                <span class="position-absolute card-menu" id="expiration">Имя получателя *</span>
+                <input type="text" class="card-placeholder mb-4" placeholder="Иван Иванов" aria-label="Username"
+                  aria-describedby="addon-wrapping" required>
+              </div>
+              <div class="col input-group flex-nowrap">
+                <div class="dropdown w-100">
+                  <span class="position-absolute card-menu" id="region">Регион *</span>
+                  <button class="dropdown-toggle card-placeholder" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Киев
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Львов</a></li>
+                    <li><a class="dropdown-item" href="#">Киев</a></li>
+                    <li><a class="dropdown-item" href="#">Харьков</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="display-mobile row g-0 pb-4">
+              <div class="col input-group flex-nowrap">
+                <span class="position-absolute card-menu" id="expiration">Телефон получателя *</span>
+                <input type="text" class="card-placeholder mb-4" placeholder="+380 (98) 00 00 000" aria-label="Username"
+                  aria-describedby="addon-wrapping" required>
+              </div>
+              <div class="col input-group flex-nowrap">
+                <span class="position-absolute card-menu" id="region">Адрес *</span>
+                <input type="password" class="card-placeholder" placeholder="ул. Улица, 12" aria-label="Username"
+                  aria-describedby="addon-wrapping" required>
+              </div>
+            </div>
+            <div class="display-mobile row g-0 pb-4">
+              <div class="col input-group flex-nowrap">
+                <span class="position-absolute card-menu" id="expiration">Дата доставки</span>
+                <input type="text" class="card-placeholder mb-4" placeholder="22.02.2021" aria-label="Username"
+                  aria-describedby="addon-wrapping" required>
+                <img class="order__menu-calendar" src="images/calendar_today.svg" alt="">
+              </div>
+              <div class="col input-group flex-nowrap">
+                <div class="dropdown w-100">
+                  <span class="position-absolute card-menu" id="region">Время доставк</span>
+                  <button class="dropdown-toggle card-placeholder" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    6:00 - 9:00
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">6:00 - 9:00</a></li>
+                    <li><a class="dropdown-item" href="#">9:00 - 12:00</a></li>
+                    <li><a class="dropdown-item" href="#">12:00 - 15:00</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-12 col-sm-6 mt-4">
+              <div class="order__menu order-mb">
+                <div class="row g-0 order__menu-title">2. Контакты отправителя</div>
 
-            </div>
-            <div class="basket-item-title fw-normal text-start">
-              Название
-            </div>
-            <div class="basket-item-price">
-              Цена за шт.
-            </div>
-            <div class="basket-item-piece">
-              Кол-во
-            </div>
-            <div class="basket-item-price">
-              Итог
-            </div>
-            <div class="basket-item-obj">
-
-            </div>
-          </div>
-          <div class="basket-head-right mobile">
-            <a href="#" class="basket-head ">
-              Продолжить покупки
-              <img class="ps-3" src="/images/basket_chevron-right.svg" alt="">
-            </a>
-          </div>
-          <div class="basket-item">
-            <div class="basket-item-img">
-              <img class="basket-item-img-bg" src="/images/basket-fl1.png" alt="">
-            </div>
-            <div class="basket-item-title text-start desktop">25 желтых тюльпанов</div>
-            <div class="basket-item-price desktop">
-              <div class="basket-price-true">
-                795 &#8372
-              </div>
-              <div class="basket-price-false">
-                995 &#8372
+                  <div class="input-group flex-nowrap  pb-4">
+                    <span class="position-absolute card-menu" id="expiration">Имя *</span>
+                    <input type="text" class="card-placeholder" placeholder="" aria-label="Username"
+                      aria-describedby="addon-wrapping" required>
+                  </div>
+                  <div class="input-group flex-nowrap  pb-4">
+                    <span class="position-absolute card-menu" id="region">Телефон *</span>
+                    <input type="password" class="card-placeholder" placeholder="" aria-label="Username"
+                      aria-describedby="addon-wrapping" required>
+                  </div>
+                  <div class="input-group flex-nowrap">
+                    <span class="position-absolute card-menu" id="expiration">Email *</span>
+                    <input type="text" class="card-placeholder" placeholder="" aria-label="Username"
+                      aria-describedby="addon-wrapping" required>
+                </div>
               </div>
             </div>
-            
-            <div class="basket-item-piece">
-              <div class="text-start mobile">25 желтых тюльпанов</div>
-              <nav class="d-inline-flex text-top" aria-label="Page navigation example">
-                <ul class="pagination pagination-basket ">
-                  <li class="page-item">
-                    <a class="page-link page-link-chevron" href="#" aria-label="Previous">
-                      <span><img src="/images/basket_chevron-left.svg" alt=""></span>
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <button class="page-link-piece">2</button>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link page-link-chevron" href="#" aria-label="Next">
-                      <span><img src="/images/basket_chevron-right.svg" alt=""></span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="basket-item-ollPrice desktop">
-              1590 &#8372
-            </div>
-            <div class="basket-item-obj">
-              <div class="btn-mobile-basket">
-                <button class="border-0 bg-transparent"><img class="pe-3" src="/images/delete.svg" alt=""></button>
-                <button class="border-0 bg-transparent"><img src="/images/heart.svg" alt=""></button>
-              </div>
-              <div class="oll__price_mobile fw-bold mobile">
-                1590 &#8372
-              </div>
-            </div>
-          </div>
-
-          <div class="basket-item">
-            <div class="basket-item-img">
-              <img class="basket-item-img-bg" src="/images/basket-fl2.png" alt="">
-            </div>
-            <div class="basket-item-title text-start desktop">25 розовых пионовидных роз</div>
-            <div class="basket-item-price desktop">
-              <div class="basket-price-true">
-                1680 &#8372
-              </div>
-              <div class="basket-price-false">
-                1680 &#8372
-              </div>
-            </div>
-            <div class="basket-item-piece">
-              <div class="text-start mobile">25 розовых пионовидных роз</div>
-              <nav class="d-inline-flex text-top" aria-label="Page navigation example">
-                <ul class="pagination pagination-basket ">
-                  <li class="page-item">
-                    <a class="page-link page-link-chevron" href="#" aria-label="Previous">
-                      <span><img src="/images/basket_chevron-left.svg" alt=""></span>
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <button class="page-link-piece">1</button>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link page-link-chevron" href="#" aria-label="Next">
-                      <span><img src="/images/basket_chevron-right.svg" alt=""></span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="basket-item-ollPrice desktop">
-              1680 &#8372
-            </div>
-            <div class="basket-item-obj">
-              <div class="btn-mobile-basket">
-                <button class="border-0 bg-transparent"><img class="pe-3" src="/images/delete.svg" alt=""></button>
-                <button class="border-0 bg-transparent"><img src="/images/heart.svg" alt=""></button>
-              </div>
-              <div class="oll__price_mobile fw-bold mobile">
-                1680 &#8372
-              </div>
-            </div>
-          </div>
-          <div class="basket-item">
-            <div class="basket-item-img">
-              <img class="basket-item-img-bg" src="/images/basket-fl3.png" alt="">
-            </div>
-            <div class="basket-item-title text-start desktop">Мечтательница</div>
-            <div class="basket-item-price desktop">
-              <div class="basket-price-true">
-                2288 &#8372
-              </div>
-              <div class="basket-price-false">
-                2288 &#8372
-              </div>
-            </div>
-            <div class="basket-item-piece">
-              <div class="text-start mobile">Мечтательница</div>
-              <nav class="d-inline-flex text-top" aria-label="Page navigation example">
-                <ul class="pagination pagination-basket ">
-                  <li class="page-item">
-                    <a class="page-link page-link-chevron" href="#" aria-label="Previous">
-                      <span><img src="/images/basket_chevron-left.svg" alt=""></span>
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <button class="page-link-piece">1</button>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link page-link-chevron" href="#" aria-label="Next">
-                      <span><img src="/images/basket_chevron-right.svg" alt=""></span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="basket-item-ollPrice desktop">
-              2288 &#8372
-            </div>
-            <div class="basket-item-obj">
-              <div class="btn-mobile-basket">
-                <button class="border-0 bg-transparent"><img class="pe-3" src="/images/delete.svg" alt=""></button>
-                <button class="border-0 bg-transparent"><img src="/images/heart.svg" alt=""></button>
-              </div>
-              <div class="oll__price_mobile fw-bold mobile">
-                2288 &#8372
-              </div>
-            </div>
-          </div>
-          <div class="basket-item">
-            <div class="basket-item-img">
-              <img class="basket-item-img-bg" src="/images/basket-fl1.png" alt="">
-            </div>
-            <div class="basket-item-title text-start desktop">25 желтых тюльпанов</div>
-            <div class="basket-item-price desktop">
-              <div class="basket-price-true">
-                795 &#8372
-              </div>
-              <div class="basket-price-false">
-                995 &#8372
-              </div>
-            </div>
-            
-            <div class="basket-item-piece">
-              <div class="text-start mobile">25 желтых тюльпанов</div>
-              <nav class="d-inline-flex text-top" aria-label="Page navigation example">
-                <ul class="pagination pagination-basket ">
-                  <li class="page-item">
-                    <a class="page-link page-link-chevron" href="#" aria-label="Previous">
-                      <span><img src="/images/basket_chevron-left.svg" alt=""></span>
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <button class="page-link-piece">2</button>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link page-link-chevron" href="#" aria-label="Next">
-                      <span><img src="/images/basket_chevron-right.svg" alt=""></span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="basket-item-ollPrice desktop">
-              1590 &#8372
-            </div>
-            <div class="basket-item-obj">
-              <div class="btn-mobile-basket">
-                <button class="border-0 bg-transparent"><img class="pe-3" src="/images/delete.svg" alt=""></button>
-                <button class="border-0 bg-transparent"><img src="/images/heart.svg" alt=""></button>
-              </div>
-              <div class="oll__price_mobile fw-bold mobile">
-                1590 &#8372
+            <div class="col-12 col-sm-6 mt-4">
+              <div class="order__menu">
+                <div class="row g-0 order__menu-title">3. Детали доставки</div>
+                <div class="form-check pb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Доставка сюрпризом
+                  </label>
+                </div>
+                <div class="form-check pb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Фотоотчет (+ 15 грн)
+                  </label>
+                </div>
+                <div class="form-check pb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Добавить вазу (+ 249 грн) 
+                  </label>
+                </div>
+                <div class="form-check pb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Напомнить о событии
+                  </label>
+                </div>
+                <div class="form-check pb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Открытка
+                  </label>
+                  <div class="form-check pt-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Визитка
+                    </label>
+                  </div>
+                  <div class="form-check pb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Полномасштабная открытка (+ 79грн)
+                    </label>
+                  </div>
+                </div>
+                <div class="input-group flex-nowrap pb-4">
+                  <span class="position-absolute card-menu" id="expiration">Повод для открытки</span>
+                  <input type="text" class="card-placeholder" placeholder="" aria-label="Username"
+                    aria-describedby="addon-wrapping" required>
+                </div>
+                <div class="input-group flex-nowrap pb-4">
+                  <span class="position-absolute card-menu" id="region">Текст открытки</span>
+                  <input type="password" class="card-placeholder" placeholder="До 70 символов" aria-label="Username"
+                    aria-describedby="addon-wrapping" required>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="basket-head-right desktop">
-            <a href="#" class="basket-head ">
-              Продолжить покупки
-              <img class="ps-3" src="/images/basket_chevron-right.svg" alt="">
-            </a>
-          </div>
-          <div class="row basket-item">
+        <div class="col-12 col-sm-3">
+
+          <div class="row g-0 basket-item order-mt">
             <div class="title-bas basket-item-dsc mb-4">Ваш заказ</div>
-            <div class="basket-item-dsc d-flex">
-              <div class="title-bas-name">Товары</div>
-              <div class="title-bas-price">5 558 &#8372</div>
-            </div>
-            <div class="basket-item-dsc d-flex mt-3">
-              <div class="title-bas-name">Скидка</div>
-              <div class="title-bas-price">254 &#8372</div>
-            </div>
-            <div class="basket-item-dsc d-flex mt-3">
-              <div class="title-bas-oll">Всего</div>
-              <div class="title-bas-oll_price">5 304 &#8372</div>
-            </div>
-            <div class="d-flex mt-5">
-              <button class="sale-item_order-btn basket-btn">Оформить заказ</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- sale - content -->
-    <div class="content">
-      <div class="sale">
-        <div class="sale-header">
-          <div class="sale-header-tittle">Рекомендации</div>
-          <div class="button-page desktop">
-            <button class="button-carousel">
-              <img src="./images/shevron-left.svg" alt="">
-            </button>
-            <button class="button-carousel">
-              <img src="./images/shevron-right.svg" alt="">
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="sale-flowers">
-        <div class="sale-item">
-          <div class="sale-item_top">
-            <div class="sale-item_top_item">-19%</div>
-            <div class="sale-item_top_like"></div>
-            <img class="sale-item_top-img" src="./images/akciia1.png" alt="">
-            <div class="sale-item_top_top">TOP</div>
-          </div>
-          <div class="sale-item_bottom">
-            <div class="retting">
-              <img src="./images/star.svg" alt="">
-              <img src="./images/star.svg" alt="">
-              <img src="./images/star.svg" alt="">
-              <img src="./images/star.svg" alt="">
-              <img src="./images/star.svg" alt="">
-            </div>
-            <div class="sale-item_price-row">
-              <div class="sale-item_item-name">
-                101 красная<br> роза
-              </div>
-              <div class="sale-item_item-price">
-                <div class="sale-item_item-price-false">
-                  2800 грн
-                </div>
-                <div class="sale-item_item-price-true">
-                  2280 грн
-                </div>
-              </div>
-            </div>
-            <button class="sale-item_order-btn desktop">Заказать</button>
-            <div class="sale-item__footer">
-              <a class="sale-item_quick-link">Быстрый заказ</a>
-              <button class="button__card border-0 bg-transparent mobile">
-                <img class="button__mobile" src="./images/button_mobile.svg" alt="">
-              </button>
+            <table class="table table__order">
+              <tr>
+                <td class="title-bas-name text-start">25 желтых тюльпанов</td>
+                <td class="title-bas-price">2</td>
+                <td class="title-bas-price">5 558 &#8372</td>
+              </tr>
+              <tr>
+                <td class="title-bas-name text-start">25 розовых <br>пионовидных роз</td>
+                <td class="title-bas-price">1</td>
+                <td class="title-bas-price">254 &#8372</td>
+              </tr>
+              <tr>
+                <td class="title-bas-name text-start">Мечтательница</td>
+                <td class="title-bas-price">1</td>
+                <td class="title-bas-price">5 304 &#8372</td>
+              </tr>
+              <tr>
+                <th colspan="2" class="order-item-dsc-object text-start">Сумма заказа</th>
+                <td class="order-item-dsc-object">6000 &#8372</td>
+              </tr>
+              <tr>
+                <th colspan="2" class="order-item-dsc-object text-start">Доставка</th>
+                <td class="order-item-dsc-object">100 &#8372</td>
+              </tr>
+              <tr>
+                <th colspan="2" class="order-item-dsc-object text-start">Фотоотчет</th>
+                <td class="order-item-dsc-object">15 &#8372</td>
+              </tr>
+            </table>
+            <div class="d-flex mt-5 mb-3">
+              <a class="btn sale-item_order-btn basket-btn" href="/order.html" role="button">Оформить заказ</a>
             </div>
           </div>
-        </div>
-        <div class="sale-item">
-          <div class="sale-item_top">
-            <div class="sale-item_top_item">-10%</div>
-            <img class="sale-item_top-img" src="./images/akciia2.png" alt="">
-            <div class="sale-item_top_top">TOP</div>
+          <div class="input-group flex-nowrap pb-4">
+            <span class="position-absolute card-menu" id="expiration">Купон</span>
+            <input type="text" class="card-placeholder" placeholder="Введите код купона" aria-label="Username"
+              aria-describedby="addon-wrapping" required>
           </div>
-          <div class="sale-item_bottom">
-            <div class="m-top"></div>
-            <div class="sale-item_price-row">
-              <div class="sale-item_item-name">
-                25 розовых<br> пионовидных роз
-              </div>
-              <div class="sale-item_item-price">
-                <div class="sale-item_item-price-false">
-                  2800 грн
-                </div>
-                <div class="sale-item_item-price-true">
-                  1680 грн
-                </div>
-              </div>
-            </div>
-            <button class="sale-item_order-btn desktop">Заказать</button>
-            <div class="sale-item__footer">
-              <a class="sale-item_quick-link">Быстрый заказ</a>
-              <button class="button__card border-0 bg-transparent mobile">
-                <img class="button__mobile" src="./images/button_mobile.svg" alt="">
-              </button>
-            </div>
+          <div class="input-group flex-nowrap pb-4">
+            <span class="position-absolute card-menu" id="region">Подарочный сертификати</span>
+            <input type="password" class="card-placeholder" placeholder="Введите номер подарочного сертификата" aria-label="Username"
+              aria-describedby="addon-wrapping" required>
           </div>
-        </div>
-        <div class="carousel-control w-100 mt-4 mobile">
-          <div class="carousel-control__item active"></div>
-          <div class="carousel-control__item"></div>
-          <div class="carousel-control__item"></div>
-          <div class="carousel-control__item"></div>
-          <div class="carousel-control__item"></div>
-        </div>
-          </div>
-    </div>
-
-      <!-- maps         -->
-      <div class="maps">
-        <iframe class="maps-bg"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10150.743007641617!2d30.493594300721483!3d50.5028061537504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b319865b533d9%3A0xcfa3ddec3fce57e5!2sFLOWERS%20BOUTIQUE!5e0!3m2!1sru!2sua!4v1650909943057!5m2!1sru!2sua"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <div class="maps__menu">
-          <div class="maps__menu-top">
-            <div class="maps__menu-top-img"><img class="menu__title-imgMobile" src="./images/logo2.png" alt=""></div>
-            <div class="maps__menu-bottom-mobile">
-              <div class="maps__menu-top-phone">
-                <div class="menu__title">
-                  <img src="./images/phone.svg" alt="">
-                  <div class="phone-title">Телефон:</div>
-                </div>
-                <div class="phoneForMobile">
-                  <div class="phone-number mt-2">+38 (063) 829 30 30</div>
-                  <div class="phone-number mt-2">+38 (067) 829 30 30</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="maps__menu-bottom">
-            <div class="maps__menu-bottom-mobile">
-              <div class="menu__title">
-                <img src="./images/skype.svg" alt="">
-                <div class="phone-title">Skype</div>
-              </div>
-              <div class="phone-number mt-3">Flowers-Ukraine</div>
-            </div>
-            <div class="maps__menu-bottom-mobile">
-              <div class="menu__title mt-3">
-                <img src="./images/mail.svg" alt="">
-                <div class="phone-title">Почта</div>
-              </div>
-              <div class="phone-number mt-3">flowers.ukraine2014@gmail.com</div>
-            </div>
-            <div class="maps__menu-navigation mt-3">
-              <button class="navigation-btn pe-3">
-                <img class="header__navigation-social-btn" src="./images/instagram.svg" alt="">
-              </button>
-              <button class="navigation-btn pe-3">
-                <img class="header__navigation-social-btn" src="./images/skype1.svg" alt="">
-              </button>
-              <button class="navigation-btn pe-3">
-                <img class="header__navigation-social-btn" src="./images/facebook.svg" alt="">
-              </button>
-            </div>
-          </div>
+          <button class="sale-item_order-btn desktop d-flex">Применить</button>
 
         </div>
       </div>
     </div>
-
-    <!-- footer -->
-
-    <div class="footer">
-      <div class="row header-top-width footer__border desktop">
-        <div class="col logo-header mt-5">
-          <img src="./images/logo-header.png">
-        </div>
-
-        <div class="col">
-          <ul>
-            <div class="col__title">ИНФОРМАЦИЯ</div>
-            <li class="col__list">
-              <a class="col-listen" href="#">О НАС</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">ДОСТАВКА И ОПЛАТА</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <div class="col__title">СЛУЖБА ПОДДЕРЖКИ</div>
-            <li class="col__list">
-              <a class="col-listen" href="#">КАРТА САЙТА</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">ВОЗВРАТ ТОВАРА</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">СВЯЗАТЬСЯ С НАМИ</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">ДЛЯ СОТРУДНИЧЕСТВА</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <div class="col__title">ЛИЧНЫЙ КАБИНЕТ</div>
-            <li class="col__list">
-              <a class="col-listen" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">ИСТОРИЯ ЗАКАЗА</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">ЗАКЛАДКИ</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">СПИСОК НОВОСТЕЙ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <div class="col__title" href="">ДОПОЛНИТЕЛЬНО</div>
-            <li class="col__list">
-              <a class="col-listen" href="#">ПОДАРОЧНЫЕ</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">СЕРТИФИКАТЫ</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">АКЦИИИ</a>
-            </li>
-            <li class="col__list">
-              <a class="col-listen" href="#">ЦВЕТЫ В ОФИС</a>
-            </li>
-          </ul>
+  </div>
+  <!-- maps         -->
+  <div class="content">
+  <div class="maps">
+    <iframe class="maps-bg"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10150.743007641617!2d30.493594300721483!3d50.5028061537504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b319865b533d9%3A0xcfa3ddec3fce57e5!2sFLOWERS%20BOUTIQUE!5e0!3m2!1sru!2sua!4v1650909943057!5m2!1sru!2sua"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="maps__menu">
+      <div class="maps__menu-top">
+        <div class="maps__menu-top-img"><img class="menu__title-imgMobile" src="./images/logo2.png" alt=""></div>
+        <div class="maps__menu-bottom-mobile">
+          <div class="maps__menu-top-phone">
+            <div class="menu__title">
+              <img src="./images/phone.svg" alt="">
+              <div class="phone-title">Телефон:</div>
+            </div>
+            <div class="phoneForMobile">
+              <div class="phone-number mt-2">+38 (063) 829 30 30</div>
+              <div class="phone-number mt-2">+38 (067) 829 30 30</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="row header-top-width footer__border mobile">
-        <div class="col logo-header mt-5 text-center pt-4">
-          <img src="./images/logo-header.png">
+      <div class="maps__menu-bottom">
+        <div class="maps__menu-bottom-mobile">
+          <div class="menu__title">
+            <img src="./images/skype.svg" alt="">
+            <div class="phone-title">Skype</div>
+          </div>
+          <div class="phone-number mt-3">Flowers-Ukraine</div>
         </div>
+        <div class="maps__menu-bottom-mobile">
+          <div class="menu__title mt-3">
+            <img src="./images/mail.svg" alt="">
+            <div class="phone-title">Почта</div>
+          </div>
+          <div class="phone-number mt-3">flowers.ukraine2014@gmail.com</div>
+        </div>
+        <div class="maps__menu-navigation mt-3">
+          <button class="navigation-btn pe-3">
+            <img class="header__navigation-social-btn" src="./images/instagram.svg" alt="">
+          </button>
+          <button class="navigation-btn pe-3">
+            <img class="header__navigation-social-btn" src="./images/skype1.svg" alt="">
+          </button>
+          <button class="navigation-btn pe-3">
+            <img class="header__navigation-social-btn" src="./images/facebook.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="footer">
+    <div class="row header-top-width footer__border desktop">
+      <div class="col logo-header mt-5">
+        <img src="./images/logo-header.png">
+      </div>
+
+      <div class="col">
         <ul>
-          <li class="dropdown position-relative">
-            <a class="btn text-white shadow-none fs-footer" data-bs-toggle="collapse" href="#collapseCompanyInfo"
-              role="button" aria-expanded="false" aria-controls="collapseCompanyInfo">
-              ИНФОРМАЦИЯ
-            </a>
-            <div class="collapse" id="collapseCompanyInfo">
-              <div class="card card-body">
-                <a class="dropdown-item header__list-link hover-link fs-footer fs-footer" href="#">О НАС</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer fs-footer" href="#">ДОСТАВКА И ОПЛАТА</a>
-                <a class="dropdown-item header__list-link hover-link text-wrap fs-footer" href="#">ПОЛИТИКА
-                  КОНФИДЕНЦИАЛЬНОСТИ</a>
-              </div>
-            </div>
+          <div class="col__title">ИНФОРМАЦИЯ</div>
+          <li class="col__list">
+            <a class="col-listen" href="#">О НАС</a>
           </li>
-          <li class="dropdown position-relative">
-            <a class="btn text-white shadow-none fs-footer" data-bs-toggle="collapse" href="#collapseService"
-              role="button" aria-expanded="false" aria-controls="collapseExample">
-              СЛУЖБА ПОДДЕРЖКИ
-            </a>
-            <div class="collapse" id="collapseService">
-              <div class="card card-body">
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">КАРТА САЙТА</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ВОЗВРАТ ТОВАРА</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СВЯЗАТЬСЯ С НАМИ</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ДЛЯ СОТРУДНИЧЕСТВА</a>
-              </div>
-            </div>
+          <li class="col__list">
+            <a class="col-listen" href="#">ДОСТАВКА И ОПЛАТА</a>
           </li>
-          <li class="dropdown position-relative">
-            <a class="btn text-white shadow-none fs-footer" data-bs-toggle="collapse" href="#collapsePersolalOffice"
-              role="button" aria-expanded="false" aria-controls="collapseExample">
-              ЛИЧНЫЙ КАБИНЕТ
-            </a>
-            <div class="collapse" id="collapsePersolalOffice">
-              <div class="card card-body">
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ИСТОРИЯ ЗАКАЗА</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЗАКЛАДКИ</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СПИСОК НОВОСТЕЙ</a>
-              </div>
-            </div>
-          </li>
-          <li class="dropdown position-relative">
-            <a class="btn text-white shadow-none fs-footer" data-bs-toggle="collapse" href="#collapseAdditionally"
-              role="button" aria-expanded="false" aria-controls="collapseExample">
-              ДОПОЛНИТЕЛЬНО
-            </a>
-            <div class="collapse" id="collapseAdditionally">
-              <div class="card card-body">
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ПОДАРОЧНЫЕ</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СЕРТИФИКАТЫ</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">АКЦИИИ</a>
-                <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЦВЕТЫ В ОФИС</a>
-              </div>
-            </div>
+          <li class="col__list">
+            <a class="col-listen" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
           </li>
         </ul>
       </div>
-
-      <div class="row header-top-width mt-5 footer-mobile">
-        <div class="col col-listen footer__copyright">Copyright © 2021. Все права защищены</div>
-        <div class="col footer__money">
-          <ul class="col-listen col-listen-style">
-            <div class="payment-method-title">Способы оплаты:</div>
-            <li class="col__list">
-              <a href="#">
-                <img src="./images/privat52.svg" alt="">
-              </a>
-            </li>
-            <li class="col__list">
-              <a href="#">
-                <img src="./images/liqpay.svg" alt="">
-              </a>
-            </li>
-            <li class="col__list">
-              <a href="#">
-                <img src="./images/masterCard.svg" alt="">
-              </a>
-            </li>
-            <li class="col__list">
-              <a href="#">
-                <img src="./images/maestro.svg" alt="">
-              </a>
-            </li>
-            <li class="col__list">
-              <a href="#">
-                <img src="./images/visaElectron.svg" alt="">
-              </a>
-            </li>
-            <li class="col__list">
-              <a href="#">
-                <img src="./images/visa.svg" alt="">
-              </a>
-            </li>
-
-          </ul>
-        </div>
+      <div class="col">
+        <ul>
+          <div class="col__title">СЛУЖБА ПОДДЕРЖКИ</div>
+          <li class="col__list">
+            <a class="col-listen" href="#">КАРТА САЙТА</a>
+          </li>
+          <li class="col__list">
+            <a class="col-listen" href="#">ВОЗВРАТ ТОВАРА</a>
+          </li>
+          <li class="col__list">
+            <a class="col-listen" href="#">СВЯЗАТЬСЯ С НАМИ</a>
+          </li>
+          <li class="col__list">
+            <a class="col-listen" href="#">ДЛЯ СОТРУДНИЧЕСТВА</a>
+          </li>
+        </ul>
       </div>
-
+      <div class="col">
+        <ul>
+          <div class="col__title">ЛИЧНЫЙ КАБИНЕТ</div>
+          <li class="col__list">
+            <a class="col-listen" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+          </li>
+          <li class="col__list">
+            <a class="col-listen" href="#">ИСТОРИЯ ЗАКАЗА</a>
+          </li>
+          <li class="col__list">
+            <a class="col-listen" href="#">ЗАКЛАДКИ</a>
+          </li>
+          <li class="col__list">
+            <a class="col-listen" href="#">СПИСОК НОВОСТЕЙ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <div class="col__title" href="">ДОПОЛНИТЕЛЬНО</div>
+          <li class="col__list">
+            <a class="col-listen" href="#">ПОДАРОЧНЫЕ</a>
+          </li>
+          <li class="col__list">
+            <a class="col-listen" href="#">СЕРТИФИКАТЫ</a>
+          </li>
+          <li class="col__list">
+            <a class="col-listen" href="shares.html">АКЦИИИ</a>
+          </li>
+          <li class="col__list">
+            <a class="col-listen" href="#">ЦВЕТЫ В ОФИС</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-      </script>
+    <div class="row header-top-width footer__border mobile">
+      <div class="col logo-header mt-5 text-center pt-4">
+        <img src="./images/logo-header.png">
+      </div>
+
+      <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ИНФОРМАЦИЯ
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <a class="dropdown-item header__list-link hover-link fs-footer fs-footer" href="#">О НАС</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer fs-footer" href="#">ДОСТАВКА И ОПЛАТА</a>
+              <a class="dropdown-item header__list-link hover-link text-wrap fs-footer" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              СЛУЖБА ПОДДЕРЖКИ
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">КАРТА САЙТА</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ВОЗВРАТ ТОВАРА</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СВЯЗАТЬСЯ С НАМИ</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ДЛЯ СОТРУДНИЧЕСТВА</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ЛИЧНЫЙ КАБИНЕТ
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ИСТОРИЯ ЗАКАЗА</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЗАКЛАДКИ</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СПИСОК НОВОСТЕЙ</a>                </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ДОПОЛНИТЕЛЬНО
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ПОДАРОЧНЫЕ</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СЕРТИФИКАТЫ</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="shares.html">АКЦИИИ</a>
+              <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЦВЕТЫ В ОФИС</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row header-top-width mt-5 footer-mobile">
+      <div class="col col-listen footer__copyright">Copyright © 2021. Все права защищены</div>
+      <div class="col footer__money">
+        <ul class="col-listen col-listen-style">
+          <div class="payment-method-title">Способы оплаты:</div>
+          <li class="col__list">
+            <a href="#">
+              <img src="./images/privat52.svg" alt="">
+            </a>
+          </li>
+          <li class="col__list">
+            <a href="#">
+              <img src="./images/liqpay.svg" alt="">
+            </a>
+          </li>
+          <li class="col__list">
+            <a href="#">
+              <img src="./images/masterCard.svg" alt="">
+            </a>
+          </li>
+          <li class="col__list">
+            <a href="#">
+              <img src="./images/maestro.svg" alt="">
+            </a>
+          </li>
+          <li class="col__list">
+            <a href="#">
+              <img src="./images/visaElectron.svg" alt="">
+            </a>
+          </li>
+          <li class="col__list">
+            <a href="#">
+              <img src="./images/visa.svg" alt="">
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
 </body>
 

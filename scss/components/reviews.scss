@@ -1,0 +1,64 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.review__menu {
+    display: flex;
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 1rem;
+
+        &-item{
+            border: 1px solid $bgViolet;
+            width: calc(25% - 2rem);
+            margin: 1rem;
+            padding: 1.8rem 1.3rem;
+
+        }
+    }
+}
+.name {
+    color: $textDark;
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    line-height: 18px;
+    font-weight: bold;
+    margin-left: 1.5rem
+}
+.nic {
+    @include d-flex(row, normal, center);
+}
+.review-about {
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    line-height: 20px;
+    font-weight: 400;
+    color: $textLightGray;
+    margin-top: 1.3rem;
+}
+.date {
+    font-family: $font;
+    color: $textLightGray;
+}
+.all_reviews {
+    margin: 1.3rem 0;
+    &-link {
+        color: $textLightGray;
+        text-decoration: none;
+    }
+}
+.reitingsDate {
+    @include d-flex(row, space-between);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) { 
+    .review__menu {
+        &-list {
+    
+            &-item{
+                width: 100%;
+    
+            }
+        }
+    }
+}

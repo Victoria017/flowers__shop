@@ -1,0 +1,26 @@
+.accordion-button {
+  font-size: 24px;
+  padding: 2rem 4rem;
+}
+
+.accordion-flush .accordion-item {
+  background-color: transparent;
+}
+.accordion-flush .accordion-button {
+  font-size: 16px;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .accordion-button::after {
+    transform: rotate(270deg);
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg);
+  }
+
+  .accordion-button {
+    padding: 1rem 0;
+  }
+}

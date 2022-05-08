@@ -1,0 +1,63 @@
+.review__menu {
+  display: flex;
+}
+.review__menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+}
+.review__menu-list-item {
+  border: 1px solid #956D84;
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  padding: 1.8rem 1.3rem;
+}
+
+.name {
+  color: #333333;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  line-height: 18px;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+
+.nic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.review-about {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: #BDBDBD;
+  margin-top: 1.3rem;
+}
+
+.date {
+  font-family: EuclidCircularB-Regular, sans-serif;
+  color: #BDBDBD;
+}
+
+.all_reviews {
+  margin: 1.3rem 0;
+}
+.all_reviews-link {
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
+.reitingsDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .review__menu-list-item {
+    width: 100%;
+  }
+}

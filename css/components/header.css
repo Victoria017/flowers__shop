@@ -173,6 +173,7 @@
 
 .favorite-price {
   color: #828282;
+  text-decoration: none;
 }
 
 .circle-violet {
@@ -183,6 +184,8 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .header-bottom {
     justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
   }
 
   .favorite-img {

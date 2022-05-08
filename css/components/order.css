@@ -1,0 +1,99 @@
+.order__menu {
+  border: 1px solid #956D84;
+  padding: 2.75rem;
+  font-size: 14px;
+  font-family: MuseoSansCyrl, sans-serif;
+}
+.order__menu-title {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  padding: 0 0 3rem;
+}
+.order__menu-calendar {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+
+.card-menu {
+  z-index: 1;
+  top: -12px;
+  left: 20px;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  background-color: white;
+  color: #BDBDBD;
+}
+
+.card-placeholder {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #333333;
+  font-size: 14px;
+}
+
+.order-item-dsc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 3rem;
+  text-align: left;
+}
+
+.order-mb {
+  padding-bottom: 20rem;
+  margin-right: 1rem;
+}
+
+.table__order {
+  border: transparent;
+}
+
+.orders {
+  border: 1px solid #956D84;
+  display: flex;
+  flex-direction: column;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .display-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order__menu {
+    padding: 1rem;
+  }
+  .order__menu-title {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .content__p {
+    padding: 0 1rem;
+  }
+
+  .order-mt {
+    margin-top: 1rem;
+  }
+}

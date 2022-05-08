@@ -199,6 +199,7 @@
 
 .favorite-price {
     color: $textGray;
+    text-decoration: none;
 }
 
 .circle-violet {
@@ -210,6 +211,8 @@
 
     .header-bottom {
         justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
     }
 
     .favorite-img {

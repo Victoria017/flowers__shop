@@ -603,6 +603,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
   }
 
   .catalog__title {
@@ -828,6 +829,7 @@
 
 .favorite-price {
   color: #828282;
+  text-decoration: none;
 }
 
 .circle-violet {
@@ -838,6 +840,8 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .header-bottom {
     justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
   }
 
   .favorite-img {
@@ -1307,6 +1311,10 @@
 
 .basket-btn {
   font-size: 1rem;
+  text-decoration: none;
+}
+.basket-btn:hover {
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -1371,6 +1379,227 @@
   .recommendations .sale-item:nth-child(3),
 .recommendations .sale-item:nth-child(4) {
     display: none;
+  }
+}
+.order__menu {
+  border: 1px solid #956D84;
+  padding: 2.75rem;
+  font-size: 14px;
+  font-family: MuseoSansCyrl, sans-serif;
+}
+.order__menu-title {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  padding: 0 0 3rem;
+}
+.order__menu-calendar {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+
+.card-menu {
+  z-index: 1;
+  top: -12px;
+  left: 20px;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  background-color: white;
+  color: #BDBDBD;
+}
+
+.card-placeholder {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #333333;
+  font-size: 14px;
+}
+
+.order-item-dsc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 3rem;
+  text-align: left;
+}
+
+.order-mb {
+  padding-bottom: 20rem;
+  margin-right: 1rem;
+}
+
+.table__order {
+  border: transparent;
+}
+
+.orders {
+  border: 1px solid #956D84;
+  display: flex;
+  flex-direction: column;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .display-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order__menu {
+    padding: 1rem;
+  }
+  .order__menu-title {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .content__p {
+    padding: 0 1rem;
+  }
+
+  .order-mt {
+    margin-top: 1rem;
+  }
+}
+.accordion-button {
+  font-size: 24px;
+  padding: 2rem 4rem;
+}
+
+.accordion-flush .accordion-item {
+  background-color: transparent;
+}
+.accordion-flush .accordion-button {
+  font-size: 16px;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .accordion-button::after {
+    transform: rotate(270deg);
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg);
+  }
+
+  .accordion-button {
+    padding: 1rem 0;
+  }
+}
+.forum {
+  color: #333333;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.forum__about {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .forum {
+    margin-bottom: 2rem;
+  }
+  .forum__about {
+    font-size: 12px;
+    padding: 0.5rem 1rem;
+  }
+
+  .accordion {
+    padding: 0 1rem;
+  }
+}
+.review__menu {
+  display: flex;
+}
+.review__menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+}
+.review__menu-list-item {
+  border: 1px solid #956D84;
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  padding: 1.8rem 1.3rem;
+}
+
+.name {
+  color: #333333;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  line-height: 18px;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+
+.nic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.review-about {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: #BDBDBD;
+  margin-top: 1.3rem;
+}
+
+.date {
+  font-family: EuclidCircularB-Regular, sans-serif;
+  color: #BDBDBD;
+}
+
+.all_reviews {
+  margin: 1.3rem 0;
+}
+.all_reviews-link {
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
+.reitingsDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .review__menu-list-item {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .forum__list-item {
+    margin-bottom: 1.5rem;
   }
 }
 .carousel-control {

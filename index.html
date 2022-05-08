@@ -210,16 +210,16 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-hover active" aria-current="page" href="#">Форум</a>
+                      <a class="nav-link nav-link-hover active" aria-current="page" href="forum.html">Форум</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-hover" href="#">Отзывы</a>
+                      <a class="nav-link nav-link-hover" href="reviews.html">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-hover" href="#">Акции</a>
+                      <a class="nav-link nav-link-hover" href="shares.html">Акции</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-hover" href="#">Новости</a>
+                      <a class="nav-link nav-link-hover" href="news.html">Новости</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle d-inline-block nav-link-hover" href="#" role="button"
@@ -265,7 +265,7 @@
             <a class="header__list header__navigation-menu-favorite" href="basket.html">
               <img class="favorite-img" src="./images/basket.svg" alt="">
             </a>
-            <a class="header__list favorite-price">&#8372; 1 520</a>
+            <a class="favorite-price">&#8372; 1 520</a>
           </div>
         </div>
       </div>
@@ -312,11 +312,8 @@
       <div class="header-bottom">
 <!-- modal for menu         -->
 
-
-        
-
         <div class="catalog__filter-btn mobile">
-          <a class="btn" href="#catalog-menu" role="button" data-bs-toggle="modal"
+          <a class="btn" href="catalog.html" role="button" data-bs-toggle="modal"
               data-bs-target="#catalog-menu">
               <img src="./images/menu-btn.svg" alt="">
           </a>
@@ -1497,7 +1494,7 @@
             <div class="sale-header">
               <div class="sale-header-tittle">Форум</div>
               <div class="button-page desktop">
-                <a href="#" class="oll__news">Все новости</a>
+                <a href="news.html" class="oll__news">Все новости</a>
                 <img class="nav__next" src="./images/nav-next1.svg" alt="">
                 <img src="./images/nav-next2.svg" alt="">
                 <img src="./images/nav-next3.svg" alt="">
@@ -1541,7 +1538,7 @@
             <div class="sale-header">
               <div class="sale-header-tittle">Форум</div>
               <div class="button-page desktop">
-                <a href="#" class="oll__news">Все новости</a>
+                <a href="news.html" class="oll__news">Все новости</a>
                 <img class="nav__next" src="./images/nav-next1.svg" alt="">
                 <img src="./images/nav-next2.svg" alt="">
                 <img src="./images/nav-next3.svg" alt="">
@@ -1625,7 +1622,7 @@
         </div>
       </div>
 
-
+<!-- footer -->
       <div class="footer">
         <div class="row header-top-width footer__border desktop">
           <div class="col logo-header mt-5">
@@ -1690,7 +1687,7 @@
                 <a class="col-listen" href="#">СЕРТИФИКАТЫ</a>
               </li>
               <li class="col__list">
-                <a class="col-listen" href="#">АКЦИИИ</a>
+                <a class="col-listen" href="shares.html">АКЦИИИ</a>
               </li>
               <li class="col__list">
                 <a class="col-listen" href="#">ЦВЕТЫ В ОФИС</a>
@@ -1703,66 +1700,68 @@
           <div class="col logo-header mt-5 text-center pt-4">
             <img src="./images/logo-header.png">
           </div>
-          <ul>
-            <li class="dropdown position-relative">
-              <a class="btn text-white shadow-none fs-footer" data-bs-toggle="collapse" href="#collapseCompanyInfo" role="button"
-                aria-expanded="false" aria-controls="collapseCompanyInfo">
-                ИНФОРМАЦИЯ
-              </a>
-              <div class="collapse" id="collapseCompanyInfo">
-                <div class="card card-body">
+
+          <div class="accordion accordion-flush" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ИНФОРМАЦИЯ
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
                   <a class="dropdown-item header__list-link hover-link fs-footer fs-footer" href="#">О НАС</a>
                   <a class="dropdown-item header__list-link hover-link fs-footer fs-footer" href="#">ДОСТАВКА И ОПЛАТА</a>
-                  <a class="dropdown-item header__list-link hover-link text-wrap fs-footer" href="#">ПОЛИТИКА
-                    КОНФИДЕНЦИАЛЬНОСТИ</a>
+                  <a class="dropdown-item header__list-link hover-link text-wrap fs-footer" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
                 </div>
               </div>
-            </li>
-            <li class="dropdown position-relative">
-              <a class="btn text-white shadow-none fs-footer" data-bs-toggle="collapse" href="#collapseService" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                СЛУЖБА ПОДДЕРЖКИ
-              </a>
-              <div class="collapse" id="collapseService">
-                <div class="card card-body">
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  СЛУЖБА ПОДДЕРЖКИ
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">КАРТА САЙТА</a>
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ВОЗВРАТ ТОВАРА</a>
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СВЯЗАТЬСЯ С НАМИ</a>
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ДЛЯ СОТРУДНИЧЕСТВА</a>
                 </div>
               </div>
-            </li>
-            <li class="dropdown position-relative">
-              <a class="btn text-white shadow-none fs-footer" data-bs-toggle="collapse" href="#collapsePersolalOffice"
-                role="button" aria-expanded="false" aria-controls="collapseExample">
-                ЛИЧНЫЙ КАБИНЕТ
-              </a>
-              <div class="collapse" id="collapsePersolalOffice">
-                <div class="card card-body">
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ЛИЧНЫЙ КАБИНЕТ
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ИСТОРИЯ ЗАКАЗА</a>
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЗАКЛАДКИ</a>
-                  <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СПИСОК НОВОСТЕЙ</a>
-                </div>
+                  <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СПИСОК НОВОСТЕЙ</a>                </div>
               </div>
-            </li>
-            <li class="dropdown position-relative">
-              <a class="btn text-white shadow-none fs-footer" data-bs-toggle="collapse" href="#collapseAdditionally" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                ДОПОЛНИТЕЛЬНО
-              </a>
-              <div class="collapse" id="collapseAdditionally">
-                <div class="card card-body">
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ДОПОЛНИТЕЛЬНО
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ПОДАРОЧНЫЕ</a>
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СЕРТИФИКАТЫ</a>
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">АКЦИИИ</a>
                   <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЦВЕТЫ В ОФИС</a>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-
         <div class="row header-top-width mt-5 footer-mobile">
           <div class="col col-listen footer__copyright">Copyright © 2021. Все права защищены</div>
           <div class="col footer__money">
