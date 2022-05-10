@@ -1,0 +1,32 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.about-shop {
+    display: flex;
+
+}
+.about-shop-item {
+    display: grid;
+}
+.about-text {
+    color: $textDark;
+    font-family: $fontMuseoSansCyrl;
+    font-size: $fontSize;
+    line-height: 30px;
+}
+.about-text>p {
+    padding-bottom: 1rem;
+}
+.list-marker::marker {
+    color: $bgViolet;
+    font-size: 1.5em;
+}
+.about__sale {
+    font-family: $fontMuseoSansCyrl;
+    font-size: 36px;
+    color: $textViolet;
+}
+.about__menu {
+    display: flex;
+    flex-direction: column;
+}

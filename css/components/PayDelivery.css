@@ -1,0 +1,48 @@
+.pay__menu {
+  font-family: EuclidCircularB-Regular, sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+.pay__menu a {
+  text-decoration: none;
+}
+
+.pay__system {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.pay__contract {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 36px;
+  color: #956D84;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .pay {
+    padding: 0 1rem;
+  }
+  .pay__menu {
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+  .pay__contract {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .pay__system {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .pay__system img {
+    padding-bottom: 2rem;
+  }
+}

@@ -1,0 +1,34 @@
+.about-shop {
+  display: flex;
+}
+
+.about-shop-item {
+  display: grid;
+}
+
+.about-text {
+  color: #333333;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+.about-text > p {
+  padding-bottom: 1rem;
+}
+
+.list-marker::marker {
+  color: #956D84;
+  font-size: 1.5em;
+}
+
+.about__sale {
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 36px;
+  color: #956D84;
+}
+
+.about__menu {
+  display: flex;
+  flex-direction: column;
+}

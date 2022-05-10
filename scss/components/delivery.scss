@@ -1,0 +1,10 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.pay__menu-color {
+    color: $textViolet;
+    font-weight: bold;
+}
+.pay__menu span {
+    font-weight: bold;
+}

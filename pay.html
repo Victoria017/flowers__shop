@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="root">
+        <div class="header desktop">
+            <nav class="navbar navbar-expand header-top desktop">
+                <div class="collapse navbar-collapse header-top-width">
+                    <div class="header__menu-left">
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <span class="header__list">Валюта</span>
+                                <a class="nav-link dropdown-toggle d-inline-block header__list-link" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Грн
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">Грн</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">USD</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">EUR</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <span class="header__list">Язык</span>
+                                <a class="nav-link dropdown-toggle d-inline-block header__list-link" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">RU</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">RU</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">UKR</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">ENG</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <span class="header__list">Город</span>
+                                <a class="nav-link dropdown-toggle d-inline-block header__list-link" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">Киев</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">Киев</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">Львов</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">Полтава</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="header__list" href="#">
+                            <img src="./images/heart.svg" width="18" height="16" class="d-inline-block header__list">
+                            <span class="translate-middle badge rounded-pill circle">2</span>
+                            Закладки
+                        </a>
+                        <a class="header__list" href="#">
+                            <img src="./images/car.svg" width="22" height="22" class="d-inline-block  header__list">
+                            Доставка и оплата
+                        </a>
+                    </div>
+                    <div class="header__menu-right">
+                        <a class="header__list" href="#">
+                            <img src="./images/icon.svg" width="18" height="16"
+                                class="d-inline-block header__list">Вход</a>
+                        <a class="header__list line_register" href="#">Регистрация</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-bottom">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png"></a>
+                </div>
+                <div class="menu">
+                    <div class="menu__search">
+                        <div class="dropdown dropdown-bottom me-5">
+                            <a class="btn dropdown-toggle text-secondary" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Поиск по категориям
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item hover-link" href="catalog.html">Все букеты</a></li>
+                                <li><a class="dropdown-item hover-link" href="catalog.html">Розы</a></li>
+                                <li><a class="dropdown-item hover-link" href="catalog.html">Цветы в коробкe</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown-bottom dropdown-search">
+                            <input type="text" class="form-control border-0" placeholder="Поиск по товарам"
+                                aria-describedby="basic-addon1">
+                            <img src="./images/search.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="menu__category">
+                        <nav class="navbar navbar-expand">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav w-100 d-flex">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle d-inline-block nav-link-hover"
+                                                href="/catalog.html" role="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Каталог товаров</a>
+
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li>
+                                                    <a class="dropdown-item header__list-link nav-link dropdown-chevron-left"
+                                                        data-bs-toggle="dropdown" href="/catalog.html">Букеты</a>
+                                                    <ul class="submenu dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Букеты из
+                                                                роз</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Букеты из
+                                                                альтромерии</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Букеты из
+                                                                ирисов</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Букеты из
+                                                                тюльпонов</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Букеты из
+                                                                орхидей</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Букеты из
+                                                                лилий</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item header__list-link nav-link dropdown-chevron-left"
+                                                        data-bs-toggle="dropdown" href="catalog.html">Розы</a>
+                                                    <ul class="submenu dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Белые розы</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Кремовые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Синие/голубые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Голландские
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Красные
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Оранжевые
+                                                                розы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item header__list-link nav-link dropdown-chevron-left"
+                                                        data-bs-toggle="dropdown" href="#">Цветы в коробке</a>
+                                                    <ul class="submenu dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Цветы в
+                                                                коробке с
+                                                                пироженым Macarons</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Цветы в
+                                                                коробке
+                                                                сердце</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Цветы в
+                                                                прямоугольной
+                                                                коробке</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Цветы в
+                                                                шляпной
+                                                                коробке</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Розы в
+                                                                коробке</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Пионы в
+                                                                коробке</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item header__list-link nav-link dropdown-chevron-left"
+                                                        data-bs-toggle="dropdown" href="#">Композиции</a>
+                                                    <ul class="submenu dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Белые розы</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Кремовые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Синие/голубые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Голландские
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Красные
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Оранжевые
+                                                                розы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item header__list-link nav-link dropdown-chevron-left"
+                                                        data-bs-toggle="dropdown" href="#">Подарки</a>
+                                                    <ul class="submenu dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Белые розы</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Кремовые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Синие/голубые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Голландские
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Красные
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Оранжевые
+                                                                розы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item header__list-link nav-link dropdown-chevron-left text-wrap"
+                                                        data-bs-toggle="dropdown" href="catalog.html">Подарочные
+                                                        корзины</a>
+                                                    <ul class="submenu dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Белые розы</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Кремовые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Синие/голубые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Голландские
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Красные
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Оранжевые
+                                                                розы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item header__list-link nav-link dropdown-chevron-left"
+                                                        data-bs-toggle="dropdown" href="catalog.html">Букеты невесты</a>
+                                                    <ul class="submenu dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Белые розы</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Кремовые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Синие/голубые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Голландские
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Красные
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Оранжевые
+                                                                розы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item header__list-link nav-link dropdown-chevron-left"
+                                                        data-bs-toggle="dropdown" href="catalog.html">Вкусные букеты</a>
+                                                    <ul class="submenu dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Белые розы</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Кремовые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Синие/голубые
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Голландские
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Красные
+                                                                розы</a></li>
+                                                        <li><a class="dropdown-item header__list-link hover-link"
+                                                                href="catalog.html">Оранжевые
+                                                                розы</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav-link-hover active" aria-current="page"
+                                                href="forum.html">Форум</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav-link-hover" href="reviews.html">Отзывы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav-link-hover" href="shares.html">Акции</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav-link-hover" href="news.html">Новости</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle d-inline-block nav-link-hover" href="#"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Информация
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item header__list-link nav-link-hover"
+                                                        href="about.html">О нас</a></li>
+                                                <li><a class="dropdown-item header__list-link nav-link-hover"
+                                                        href="pay.html">Оплата и доставка</a>
+                                                </li>
+                                                <li><a class="dropdown-item header__list-link nav-link-hover"
+                                                        href="delivery.html">Корпоративным клиентам</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header__navigation">
+                    <div class="header__navigation-social">
+                        <button class="navigation-btn">
+                            <img class="header__navigation-social-btn" src="./images/viber.svg" alt="">
+                        </button>
+                        <button class="navigation-btn">
+                            <img class="header__navigation-social-btn" src="./images/instagram.svg" alt="">
+                        </button>
+                        <button class="navigation-btn">
+                            <img class="header__navigation-social-btn" src="./images/telegram.svg" alt="">
+                        </button>
+                        <button class="navigation-btn">
+                            <img class="header__navigation-social-btn" src="./images/facebook.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="header__navigation-phone">+38 (067) 829 30 30</div>
+                    <div class="header__navigation-menu">
+                        <a class="header__list header__navigation-menu-favorite" href="basket.html">
+                            <img class="favorite-img" src="./images/heart.svg" alt="">
+                            <span class="translate-middle badge rounded-pill circle-violet">2</span>
+                        </a>
+                        <a class="header__list header__navigation-menu-favorite" href="basket.html">
+                            <img class="favorite-img" src="./images/basket.svg" alt="">
+                        </a>
+                        <a class="favorite-price">&#8372; 1 520</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="header mobile">
+            <nav class="navbar navbar-expand header-top">
+                <div class="collapse navbar-collapse header-top-width">
+                    <div class="header__menu-left">
+                        <ul class="navbar-nav mb-lg-0  border-menu-left">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-inline-block header__list-link" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Грн
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">Грн</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">USD</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">EUR</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="header__list" href="#">
+                            <img src="./images/car.svg" width="22" height="22" class="d-inline-block  header__list">
+                            Доставка и оплата
+                        </a>
+                        <ul class="navbar-nav mb-lg-0  border-menu-right">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-inline-block header__list-link" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">RU</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">RU</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">UKR</a></li>
+                                    <li><a class="dropdown-item header__list-link hover-link" href="#">ENG</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-bottom">
+                <!-- modal for menu         -->
+                <div class="catalog__filter-btn mobile">
+                    <a class="btn" href="#catalog-menu" role="button" data-bs-toggle="modal"
+                        data-bs-target="#catalog-menu">
+                        <img src="./images/menu-btn.svg" alt="">
+                    </a>
+
+                    <div class="modal fade" id="catalog-menu" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog h-100 w-100 m-0">
+                            <div class="modal-content h-100">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Категории</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-body-bottom">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown border-btn">
+                                                <a class="nav-link d-inline-block badge-item dropdown__catalog-chevron-bottom"
+                                                    href="#" role="button" data-bs-toggle="dropdown"
+                                                    data-bs-auto-close="false" aria-expanded="false">Все
+                                                    букеты</a>
+                                                <ul class="dropdown-menu w-100 border-0">
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Розы</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Цветы в
+                                                                    коробке</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Композиции
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Подарки
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Подарочные
+                                                                    корзины</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Букеты
+                                                                    невесты</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Вкусные
+                                                                    букеты</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown border-btn">
+                                                <a class="nav-link d-inline-block badge-item dropdown__catalog-chevron-bottom"
+                                                    href="#" role="button" data-bs-toggle="dropdown"
+                                                    data-bs-auto-close="false" aria-expanded="false">Розы</a>
+                                                <ul class="dropdown-menu w-100 border-0">
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Белые розы
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Кремовые
+                                                                    розы</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">
+                                                                    Синие/голубые розы</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Голландские
+                                                                    розы</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Красные
+                                                                    розы</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Оранжевые
+                                                                    розы</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Кустовая
+                                                                    роза</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Метровые
+                                                                    розы</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Розовые
+                                                                    розы</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Жёлтые розы
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Черные розы
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">Пионовидные
+                                                                    розы</div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">11 роз
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label d-flex">
+                                                                <input
+                                                                    class="header__list-link-checkbox form-check-input d-none"
+                                                                    type="checkbox" value="">
+                                                                <img class="header__list-link-check"
+                                                                    src="/images/done.svg">
+                                                                <div class="dropdown-item header__list-link">19 роз
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                            </li>
+                                            <li class="nav-item dropdown border-btn">
+                                                <a class="nav-link d-inline-block badge-item dropdown__catalog-chevron-bottom"
+                                                    href="#" role="button" data-bs-toggle="dropdown"
+                                                    data-bs-auto-close="false" aria-expanded="false">Цветы
+                                                    в коробке
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown border-btn">
+                                                <a class="nav-link d-inline-block badge-item dropdown__catalog-chevron-bottom"
+                                                    href="#" role="button" data-bs-toggle="dropdown"
+                                                    data-bs-auto-close="false" aria-expanded="false">Композиции
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown border-btn">
+                                                <a class="nav-link d-inline-block badge-item dropdown__catalog-chevron-bottom"
+                                                    href="#" role="button" data-bs-toggle="dropdown"
+                                                    data-bs-auto-close="false" aria-expanded="false">Подарки
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown border-btn">
+                                                <a class="nav-link d-inline-block badge-item dropdown__catalog-chevron-bottom"
+                                                    href="#" role="button" data-bs-toggle="dropdown"
+                                                    data-bs-auto-close="false" aria-expanded="false">Подарочные корзины
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown border-btn">
+                                                <a class="nav-link d-inline-block badge-item dropdown__catalog-chevron-bottom"
+                                                    href="#" role="button" data-bs-toggle="dropdown"
+                                                    data-bs-auto-close="false" aria-expanded="false">Букеты невесты
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown border-btn">
+                                                <a class="nav-link d-inline-block badge-item dropdown__catalog-chevron-bottom"
+                                                    href="#" role="button" data-bs-toggle="dropdown"
+                                                    data-bs-auto-close="false" aria-expanded="false">Вкусные букеты
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo">
+                        <a href="index.html"><img src="./images/logo.png"></a>
+                    </div>
+
+                    <div class="header__navigation">
+                        <div class="header__navigation-menu">
+                            <a href="#" class="header__list ">
+                                <img src="./images/search.svg" alt="">
+                            </a>
+                            <a class="header__list header__navigation-menu-favorite" href="#">
+                                <img class="favorite-img" src="./images/basket.svg" alt="">
+                                <span class="translate-middle badge rounded-pill circle-violet badge-mobile">1</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sales -->
+        <div class="content">
+            <nav class="desktop" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a class="breadcrump-link" href="index.html">Главная</a>
+                    </li>
+
+                    <li class="breadcrumb-item">
+                        <a class="breadcrumb-item active" aria-current="page">О нас</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Оплата и доставка</li>
+
+                </ol>
+            </nav>
+            <!-- about -->
+            <div class="sale">
+                <div class="catalog__title mb-2">Оплата и доставка</div>
+                <div class="pay">
+                    <div class="pay__menu">
+                        <a class="pay__menu" href="index.html">Flowers-Ukraine.com</a>- это единая сеть партнеров,
+                        курьерская доставка цветов, что гарантирует доставку букетов и подарков
+                        по всей Украине вовремя и в надлежащем виде. Доставка цветов по украине осуществляется в удобное
+                        для Вас время.
+                    </div>
+                    <div class="pay__menu">
+                        Цветы и корзины фруктов - это скоропортящийся продукт, поэтому компания оставляет за собой право
+                        изменения состава и
+                        внешнего вида товара на 20-25% с сохранением общего вида и стоимости компонентов.
+                    </div>
+                    <div class="pay__menu">
+                        Доставка цветов в областные центры Украины - от 100 грн
+                        За ранние (с 7 до 9) и вечерние (с 21 до 23) временные промежутки доставки доплата составляет
+                        50грн.
+                    </div>
+                    <div class="pay__menu">В крупных городах: Киев, Днепропетровск, Одесса, Донецк, Харьков</div>
+                    <ul>
+                        <li class="list-marker">доставка осуществляется бесплатно при заказе от 800 грн;</li>
+                        <li class="list-marker">при заказе менее 800 грн доставка оплачивается отдельно и составляет 100
+                            грн.</li>
+                        </li>
+                    </ul>
+                    <div class="pay__menu">Доставка цветов по районным цетрам и поселкам от 160 грн, более подробно
+                        уточнять у менеджера.</div>
+                    <div class="pay__menu">При высокой загруженности дорог время доставки гарантировать невозможно.
+                        Надеемся на Ваше понимание!</div>
+                    <div class="pay__menu">
+                        Доставка заказов оплаченных после 18:00 по киевскому времени, при условии ранней доставки на
+                        следующий день, может быть
+                        перенесена на более позднее время по согласованию с заказчиком.
+                    </div>
+                    <div class="pay__menu">Вы можете оплатить товар:</div>
+                    <div class="pay__system">
+                        <img src="/images/payPrivat.png" alt="">
+                        <img src="/images/payVisa.png" alt="">
+                        <img src="/images/payMaster.png" alt="">
+                        <img src="/images/payPortmone.png" alt="">
+                        <img src="/images/payJandex.png" alt="">
+                    </div>
+                    <div class="pay__menu">
+                        «Приват24» – самый популярный Интернет-банк Украины.
+                        Наличными оплата производится предварительно перед фактом доставки наличными курьеру. Стоимость
+                        услуги выезда курьера
+                        составляет 20 грн.
+                        Оплата карточкой Visa/MasterCard В нашем магазине Вы можете оплатить заказ при помощи платежной
+                        (пластиковой)
+                        карты.Сервис проведения платежей обеспечивается Межбанковской системой электронной доставки и
+                        оплаты счетов Portmone.com
+                        с использованием современного и безопасного механизма авторизации платежных карт.
+                        Реквизиты платежных карт вводятся на сайте Portmone.com в защищенном режиме, и недоступны
+                        сотрудникам.
+                        Яндекс.Деньги После оплаты, пожалуйста напишите нам email с суммой проплаты и номером Вашего
+                        заказа. А также укажите эту
+                        информацию при переводе.
+                    </div>
+                    <div class="pay__menu">Мы работаем по всей Украине!</div>
+                    <div class="pay__contract">Договор-оферта интернет-магазина</div>
+                    <div class="pay__menu">
+                        Интернет-магазин <a class="pay__menu" href="index.html">flowers-ukraine.com</a> (далее
+                        ПРОДАВЕЦ), публикует настоящий договор, являющийся публичным
+                        договором-офертой в адрес как физических, так и юридических лиц (далее ПОКУПАТЕЛЬ) о
+                        нижеследующем:
+                    </div>
+
+                    <div class="pay__menu">
+                        Статья 1. Предмет договора-оферты.
+                        1.1. ПРОДАВЕЦ обязуется произвести пополнение виртуального счета на сайте <a class="pay__menu"
+                            href="index.html">flowers-ukraine.com</a> ПОКУПАТЕЛЮ, а ПОКУПАТЕЛЬ
+                        обязуется оплатить услугу любым удобным способом на сайте платежного шлюза WWW.INTERKASSA.COM.
+                    </div>
+                    <div class="pay__menu">Статья 2. Момент заключения договора.</div>
+                    <div class="pay__menu">2.1. Текст данного Договора является публичной офертой</div>
+                    <div class="pay__menu">
+                        2.2. Факт оформления ЗАКАЗА УСЛУГИ у ПРОДАВЦА как самостоятельно, так и через оператора,
+                        является безоговорочным
+                        принятием данного Договора, и ПОКУПАТЕЛЬ рассматривается как лицо, вступившее с ПРОДАВЦОМ в
+                        договорные отношения.
+                    </div>
+                    <div class="pay__menu">2.3. Оформление ЗАКАЗА УСЛУГИ и расчета осуществляется путем заказа
+                        ПОКУПАТЕЛЕМ в интернет-магазине <a class="pay__menu" href="index.html">flowers-ukraine.com</a>.
+                    </div>
+                    <div class="pay__menu">Статья 3. Стоимость УСЛУГИ.</div>
+                    <div class="pay__menu">3.1. Цены в интернет-магазине указаны в валюте страны покупателя.</div>
+                    <div class="pay__menu">
+                        3.2. Стоимость УСЛУГИ выбирается ПОКУПАТЕЛЕМ, от нее зависит сумма, которая будет зачислена
+                        ПОКУПАТЕЛЮ на
+                        виртуальный
+                        счет сайта flowers-ukraine.com.
+                    </div>
+                    <div class="pay__menu">3.3. Один ПОКУПАТЕЛЬ имеет право заказывать УСЛУГУ неограниченное количество
+                        раз.</div>
+                    <div class="pay__menu">Статья 4. Оплата УСЛУГИ.</div>
+                    <div class="pay__menu">
+                        4.1. Оплата услуги осуществляется ПОКУПАТЕЛЕМ одним из множества доступных способов, на сайте
+                        платежного шлюза
+                        WWW.INTERKASSA.COM
+                    </div>
+                    <div class="pay__menu">
+                        4.2. В большинстве случаев, комиссия с ПОКУПАТЕЛЯ не взимается, однако платежный шлюз
+                        WWW.INTERKASSA.COM, а так же
+                        платежная система имеют право взимать
+                    </div>
+                    <div class="pay__menu">Статья 5. Оказание УСЛУГИ.</div>
+                    <div class="pay__menu">
+                        5.1. В большинстве случаев оказание УСЛУГИ ПОКУПАТЕЛЮ осуществляется автоматической системой
+                        после проведения
+                        платежа в
+                        срок не более одного часа.
+                    </div>
+                    <div class="pay__menu">
+                        5.2. В случае, если в течение одного часа УСЛУГА ПОКУПАТЕЛЮ не оказана, он обязан сообщить о
+                        возникновении проблемы
+                        консультанту по телефону и указать необходимые для проверки платежа сведения, в этом случае
+                        УСЛУГА будет оказана в
+                        ручном режиме в течение 48 часов с момента обращения.
+                    </div>
+                    <div class="pay__menu">Статья 6. Права и обязанности сторон.</div>
+                    <div class="pay__menu">6.1. ПРОДАВЕЦ обязуется:</div>
+                    <div class="pay__menu">
+                        6.1.1. Не разглашать любую частную информацию ПОКУПАТЕЛЯ и не предоставлять доступ к этой
+                        информации третьим лицам,
+                        за
+                        исключением случаев, предусмотренных законодательством.
+                    </div>
+                    <div class="pay__menu">
+                        6.1.2. Предоставить ПОКУПАТЕЛЮ возможность получения бесплатных консультаций по контактным
+                        данным, указанным на
+                        сайте
+                        магазина (<a class="pay__menu" href="index.html">flowers-ukraine.com</a>). Объем консультаций
+                        ограничивается конкретными вопросами, связанными с выполнениями
+                        ЗАКАЗА.
+                    </div>
+                    <div class="pay__menu">
+                        6.1.3. Оказать ПОКУПАТЕЛЮ УСЛУГУ пополнения счета на сайте <a class="pay__menu"
+                            href="index.html">flowers-ukraine.com</a> автоматической системой в течение
+                        часа
+                        после оплаты услуги, либо в ручном режиме в течение 48 часов после обращение ПОКУПАТЕЛЯ в
+                        консультанту (см. п.5.2).
+                    </div>
+                    <div class="pay__menu">
+                        6.1.4. ПРОДАВЕЦ оставляет за собой право изменять настоящий ДОГОВОР в одностороннем порядке до
+                        момента его
+                        заключения.
+                    </div>
+                    <div class="pay__menu">6.2. ПОКУПАТЕЛЬ обязуется:</div>
+                    <div class="pay__menu">
+                        6.2.1. До момента заключения ДОГОВОРА ознакомиться с содержанием договора-оферты, условиями
+                        оплаты и доставки на
+                        сайте
+                        магазина (<a class="pay__menu" href="index.html">flowers-ukraine.com</a>).
+                    </div>
+                    <div class="pay__menu">
+                        6.2.2. Предоставлять достоверную информацию о себе (контактные телефоны, адрес электронной
+                        почты) и реквизиты для
+                        доставки уведомления об успешном платеже.
+                    </div>
+                    <div class="pay__menu">Статья 7. Ответственность сторон и разрешение споров.</div>
+                    <div class="pay__menu">
+                        7.1. Стороны несут ответственность за неисполнение или ненадлежащее исполнение настоящего
+                        ДОГОВОРА в порядке,
+                        предусмотренном настоящим ДОГОВОРОМ и действующим законодательством.
+                    </div>
+                    <div class="pay__menu">7.3. ПРОДАВЕЦ не несет ответственности, если различные ожидания ПОКУПАТЕЛЯ об
+                        оказанной услуге
+                        оказались не оправданны.</div>
+                    <div class="pay__menu">
+                        7.4. ПРОДАВЕЦ не несет ответственности за частичное или полное неисполнение обязательств по
+                        оказанию УСЛУГИ, если
+                        они
+                        являются следствием форс-мажорных обстоятельств.
+                    </div>
+                    <div class="pay__menu">
+                        7.5. ПОКУПАТЕЛЬ, оформляя ЗАКАЗ, несет ответственность за достоверность предоставляемой
+                        информации о себе, а так же
+                        подтверждает, что с условиями настоящего ДОГОВОРА ознакомлен и согласен.
+                    </div>
+                    <div class="pay__menu">
+                        7.6. Все споры и разногласия, возникающие при исполнении СТОРОНАМИ обязательств по настоящему
+                        Договору, решаются
+                        путем
+                        переговоров. В случае невозможности их устранения, СТОРОНЫ имеют право обратиться за судебной
+                        защитой своих
+                        интересов.
+                    </div>
+                    <div class="pay__menu">Статья 8. Возврат средств.</div>
+                    <div class="pay__menu">
+                        8.1. Все платежи на сайте <a class="pay__menu" href="index.html">flowers-ukraine.com</a> конечны
+                        и не могут быть возвращены полностью или частично на счет
+                        ПОКУПАТЕЛЯ.
+                    </div>
+                    <div class="pay__menu">
+                        Статья 9. Форс-мажорные обстоятельства.
+                        9.1. Стороны освобождаются от ответственности за неисполнение или ненадлежащее исполнение
+                        обязательств по Договору
+                        на
+                        время действия непреодолимой силы. Под непреодолимой силой понимаются чрезвычайные и
+                        непреодолимые при данных
+                        условиях
+                        обстоятельства, препятствующие исполнению своих обязательств СТОРОНАМИ по настоящему Договору. К
+                        ним относятся
+                        стихийные
+                        явления (землетрясения, наводнения и т. п.), обстоятельства общественной жизни (военные
+                        действия, чрезвычайные
+                        положения, крупнейшие забастовки, эпидемии и т. п.), запретительные меры государственных органов
+                        (запрещение
+                        перевозок,
+                        валютные ограничения, международные санкции запрета на торговлю и т. п.). В течение этого
+                        времени СТОРОНЫ не имеют
+                        взаимных претензий, и каждая из СТОРОН принимает на себя свой риск последствия форс-мажорных
+                        обстоятельств.
+                    </div>
+                    <div class="pay__menu">Статья 10. Срок действия договора.</div>
+                    <div class="pay__menu">
+                        10.1. Настоящий ДОГОВОР вступает в силу с момента обращения в Интернет-магазин <a
+                            class="pay__menu" href="index.html">flowers-ukraine.com</a> и оформления
+                        ЗАКАЗА,
+                        и заканчивается при полном исполнении обязательств СТОРОНАМИ.
+                    </div>
+                    <div class="pay__menu">Статья 11. Реквизиты интернет магазина.</div>
+                    <div class="pay__menu">Адрес в сети Интернет - <a class="pay__menu"
+                            href="index.html">flowers-ukraine.com</a></div>
+                </div>
+            </div>
+            <div class="maps">
+                <iframe class="maps-bg"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10150.743007641617!2d30.493594300721483!3d50.5028061537504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b319865b533d9%3A0xcfa3ddec3fce57e5!2sFLOWERS%20BOUTIQUE!5e0!3m2!1sru!2sua!4v1650909943057!5m2!1sru!2sua"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="maps__menu">
+                    <div class="maps__menu-top">
+                        <div class="maps__menu-top-img"><img class="menu__title-imgMobile" src="./images/logo2.png"
+                                alt=""></div>
+                        <div class="maps__menu-bottom-mobile">
+                            <div class="maps__menu-top-phone">
+                                <div class="menu__title">
+                                    <img src="./images/phone.svg" alt="">
+                                    <div class="phone-title">Телефон:</div>
+                                </div>
+                                <div class="phoneForMobile">
+                                    <div class="phone-number mt-2">+38 (063) 829 30 30</div>
+                                    <div class="phone-number mt-2">+38 (067) 829 30 30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="maps__menu-bottom">
+                        <div class="maps__menu-bottom-mobile">
+                            <div class="menu__title">
+                                <img src="./images/skype.svg" alt="">
+                                <div class="phone-title">Skype</div>
+                            </div>
+                            <div class="phone-number mt-3">Flowers-Ukraine</div>
+                        </div>
+                        <div class="maps__menu-bottom-mobile">
+                            <div class="menu__title mt-3">
+                                <img src="./images/mail.svg" alt="">
+                                <div class="phone-title">Почта</div>
+                            </div>
+                            <div class="phone-number mt-3">flowers.ukraine2014@gmail.com</div>
+                        </div>
+                        <div class="maps__menu-navigation mt-3">
+                            <button class="navigation-btn pe-3">
+                                <img class="header__navigation-social-btn" src="./images/instagram.svg" alt="">
+                            </button>
+                            <button class="navigation-btn pe-3">
+                                <img class="header__navigation-social-btn" src="./images/skype1.svg" alt="">
+                            </button>
+                            <button class="navigation-btn pe-3">
+                                <img class="header__navigation-social-btn" src="./images/facebook.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="row header-top-width footer__border desktop">
+            <div class="col logo-header mt-5">
+                <img src="./images/logo-header.png">
+            </div>
+
+            <div class="col">
+                <ul>
+                    <div class="col__title">ИНФОРМАЦИЯ</div>
+                    <li class="col__list">
+                        <a class="col-listen" href="about.html">О НАС</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">ДОСТАВКА И ОПЛАТА</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <div class="col__title">СЛУЖБА ПОДДЕРЖКИ</div>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">КАРТА САЙТА</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">ВОЗВРАТ ТОВАРА</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">СВЯЗАТЬСЯ С НАМИ</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">ДЛЯ СОТРУДНИЧЕСТВА</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <div class="col__title">ЛИЧНЫЙ КАБИНЕТ</div>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">ИСТОРИЯ ЗАКАЗА</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">ЗАКЛАДКИ</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">СПИСОК НОВОСТЕЙ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <div class="col__title" href="">ДОПОЛНИТЕЛЬНО</div>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">ПОДАРОЧНЫЕ</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">СЕРТИФИКАТЫ</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="shares.html">АКЦИИИ</a>
+                    </li>
+                    <li class="col__list">
+                        <a class="col-listen" href="#">ЦВЕТЫ В ОФИС</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row header-top-width footer__border mobile">
+            <div class="col logo-header mt-5 text-center pt-4">
+                <img src="./images/logo-header.png">
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ИНФОРМАЦИЯ
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a class="dropdown-item header__list-link hover-link fs-footer fs-footer"
+                                href="about.html">О НАС</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer fs-footer" href="#">ДОСТАВКА
+                                И ОПЛАТА</a>
+                            <a class="dropdown-item header__list-link hover-link text-wrap fs-footer" href="#">ПОЛИТИКА
+                                КОНФИДЕНЦИАЛЬНОСТИ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            СЛУЖБА ПОДДЕРЖКИ
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">КАРТА САЙТА</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ВОЗВРАТ ТОВАРА</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СВЯЗАТЬСЯ С
+                                НАМИ</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ДЛЯ
+                                СОТРУДНИЧЕСТВА</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ЛИЧНЫЙ КАБИНЕТ
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ИСТОРИЯ ЗАКАЗА</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЗАКЛАДКИ</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СПИСОК НОВОСТЕЙ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ДОПОЛНИТЕЛЬНО
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ПОДАРОЧНЫЕ</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">СЕРТИФИКАТЫ</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer"
+                                href="shares.html">АКЦИИИ</a>
+                            <a class="dropdown-item header__list-link hover-link fs-footer" href="#">ЦВЕТЫ В ОФИС</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row header-top-width mt-5 footer-mobile">
+            <div class="col col-listen footer__copyright">Copyright © 2021. Все права защищены</div>
+            <div class="col footer__money">
+                <ul class="col-listen col-listen-style">
+                    <div class="payment-method-title">Способы оплаты:</div>
+                    <li class="col__list">
+                        <a href="#">
+                            <img src="./images/privat52.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="col__list">
+                        <a href="#">
+                            <img src="./images/liqpay.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="col__list">
+                        <a href="#">
+                            <img src="./images/masterCard.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="col__list">
+                        <a href="#">
+                            <img src="./images/maestro.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="col__list">
+                        <a href="#">
+                            <img src="./images/visaElectron.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="col__list">
+                        <a href="#">
+                            <img src="./images/visa.svg" alt="">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.pay {
+    &__menu {
+        font-family: $font;
+        font-size: $fontSize;
+        color: $textDark;
+        line-height: 30px;
+        margin-bottom: 2rem;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+}
+
+.pay__system {
+    @include d-flex (row, space-between);
+    margin: 3rem 0;
+
+}
+
+.pay__contract {
+    font-family: $fontMuseoSansCyrl;
+    font-size: 36px;
+    color: $textViolet;
+    margin-bottom: 3rem;
+
+}
+
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .pay {
+        padding: 0 1rem;
+        &__menu {
+            font-size: 12px;
+            margin-bottom: 1rem;
+        }
+        &__contract {
+            font-size: $fontSize;
+            margin-bottom: 1rem;
+        }
+        &__system {
+            @include d-flex (row, space-around);
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+
+            & img {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
