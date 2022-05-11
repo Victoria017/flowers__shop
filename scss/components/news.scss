@@ -2,10 +2,22 @@
 @import '../mixin.scss';
 
 
-@media only screen and (min-width:320px) and (max-width:768px) {
+@media only screen and (min-width:320px) and (max-width:920px) {
 
     .forum__list-item {
         margin-bottom: 1.5rem;
     }
 
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+
+    .forum__list-item-title {
+        font-size: 1rem;
+    }
+    .forum__list-item-descr {
+        font-size: 0.8rem;
+        padding: 1rem 0 1rem 1.6rem;
+
+    }
 }

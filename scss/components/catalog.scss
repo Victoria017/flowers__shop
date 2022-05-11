@@ -8,7 +8,7 @@
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 .catalog__menu {
     @include d-flex(row, space-between);
@@ -22,17 +22,7 @@
 
     }
 }
-.catalog__link {
-    color: $textDark;
-    font-size: 1.25rem;
-    font-weight: 400;
-    &:hover,
-    &:active,
-    &:focus {
-        color: $textDark;
-        font-weight: bold;
-    }
-}
+
 .catalog__menu-whom-item {
     color: $textGray;
 
@@ -136,9 +126,30 @@
         color: $textViolet;
     }
 }
-@media only screen and (min-width:320px) and (max-width:768px) {
+.catalog__link {
+    color: $textDark;
+    font-size: 1.25rem;
+    font-weight: 400;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $textDark;
+        font-weight: bold;
+    }
+}
+
+
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+    .catalog__link {
+    font-size: 14px;
+    }
+    .catalog__menu-filter {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:920px) {
     .catalog__filter-btn {
-        @include d-flex(row, space-evenly);
+        @include d-flex(row, space-between);
         width: 100%;
     }
     .catalog__title {

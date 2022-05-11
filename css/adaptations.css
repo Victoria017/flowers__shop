@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 920px) {
   .desktop {
     display: none;
   }
@@ -10,4 +10,7 @@
   .mobile {
     display: flex;
   }
+}
+ul {
+  list-style-position: inside;
 }

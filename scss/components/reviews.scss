@@ -50,8 +50,20 @@
 .reitingsDate {
     @include d-flex(row, space-between);
 }
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+    .nic,
+    .reitingsDate {
+        flex-direction: column;
+    }
+    .name {
+        margin-top: 1rem;
+    }
+    .review-about {
+        font-size: 12px;
+    }
+}
 
-@media only screen and (min-width:320px) and (max-width:768px) { 
+@media only screen and (min-width:320px) and (max-width:920px) { 
     .review__menu {
         &-list {
     

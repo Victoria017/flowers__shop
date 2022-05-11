@@ -23,7 +23,19 @@
   margin-bottom: 3rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+  .pay__menu {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .pay__contract {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 920px) {
   .pay {
     padding: 0 1rem;
   }

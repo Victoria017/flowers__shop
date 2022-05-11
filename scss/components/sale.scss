@@ -96,7 +96,8 @@
     font-family: $fontMuseoSansCyrl;
     margin-top: 1.625rem;
     margin-bottom: 2.56rem;
-    line-height: 1rem;
+    height: 3rem;
+
 }
 
 .sale-item_item-name {
@@ -160,8 +161,25 @@
     margin-top: 1.5rem;
 }
 
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+    .sale-item_price-row {
+        padding: 0.5rem 1rem !important;
+        @include d-flex(column, center);
+    }
+    .sale-item_item-name {
+        margin-bottom: 1rem;
+        height: 3rem;
+    }
+    .catalog__title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .sale-flowers {
+        @include d-flex(row, center);
+    }
 
-@media only screen and (min-width:320px) and (max-width:768px) {
+}
+@media only screen and (min-width:320px) and (max-width:920px) {
 
     .sale-item {
         width: calc(50% - 8px);
@@ -230,7 +248,7 @@
         @include d-flex(column, center, center);
         left: 0;
         right: 0;
-        margin: 0.8rem auto;
+        margin: 1.8rem auto;
     }
     .sale-item_quick-link {
         font-size: 10px;
@@ -253,10 +271,4 @@
     .button__card {
         display: inline-block !important;
     }
-    html, body {
-        margin: 0px;
-        padding: 0px;
-        background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
-    }
-    
 }

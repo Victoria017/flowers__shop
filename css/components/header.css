@@ -1,7 +1,6 @@
 .header {
   flex-direction: column;
   font-family: MuseoSansCyrl, sans-serif;
-  font-size: 1rem;
   color: #ffffff;
 }
 .header-top {
@@ -15,11 +14,50 @@
 .header-bottom {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   max-width: 88.75rem;
   margin: auto;
   position: relative;
+  padding: 1.75rem 0 4rem;
 }
 
+.favorite-img {
+  width: 1.5rem;
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+  .header__navigation {
+    display: none !important;
+  }
+
+  .header__menu-left {
+    justify-content: start !important;
+  }
+
+  .content {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (min-width: 920px) and (max-width: 1440px) {
+  .logo img {
+    width: 80px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .favorite-img {
+    width: 1.6rem;
+  }
+}
+@media only screen and (min-width: 920px) and (max-width: 1600px) {
+  .content,
+.header-top-width,
+.header-bottom {
+    margin: 0 64px;
+  }
+}
 .header__img-left {
   background-image: url(../images/right_flow.png);
   position: absolute;
@@ -52,7 +90,6 @@
 }
 
 .menu__category {
-  font-size: 1rem;
   color: #ffffff;
   font-family: EuclidCircularB-Regular, sans-serif;
   font-weight: 700;
@@ -105,16 +142,13 @@
 }
 
 /* header-menu*/
-.header-bottom {
-  padding: 1.75rem 0 4rem;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 12.5rem 0 7.5rem;
   flex-grow: 1;
+  max-width: 814px;
+  margin: 0 2rem;
 }
 .menu__search {
   display: flex;
@@ -167,10 +201,6 @@
   background-color: transparent;
 }
 
-.favorite-img {
-  width: 40px;
-}
-
 .favorite-price {
   color: #828282;
   text-decoration: none;
@@ -181,7 +211,11 @@
   font-family: MuseoSansCyrl, sans-serif;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 920px) {
+  .content {
+    padding: 0 1rem;
+  }
+
   .header-bottom {
     justify-content: space-between;
     width: 100%;
@@ -189,7 +223,7 @@
   }
 
   .favorite-img {
-    width: 25px;
+    width: 1.56rem;
   }
 
   .circle-violet {

@@ -119,7 +119,58 @@
     }
 
 }
-@media only screen and (min-width:320px) and (max-width:768px) {
+
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+    .basket-item-img {
+        width: 25%;
+    }
+    .basket-item-piece {
+        width: 40%;
+        @include d-flex(column,center);
+    }
+    .basket-item-obj {
+        width: 35%;
+    }
+    .text-start {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .btn-mobile-basket {
+        display: flex;
+    }
+    .oll__price_mobile {
+        @include d-flex(row, center,end);
+    }
+    .btn-mobile-basket {
+        @include d-flex(row, center,end);
+
+    }
+    .btn-mobile-basket>button {
+        padding: 0;
+    }
+    .page-link {
+        padding: 0 0.5rem;
+    }
+    .text-top {
+        margin-top: 0.5rem;
+    }
+    .title-bas {
+        font-size: 24px;
+    }
+    .basket-item-dsc {
+        padding: 0.5rem 4rem;
+    }
+    .recommendations {
+        .sale-item:nth-child(3),
+        .sale-item:nth-child(4) {
+            display: none;
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width:320px) and (max-width:920px) {
 
     .basket-item-img {
         width: 25%;

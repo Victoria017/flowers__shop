@@ -4,6 +4,7 @@
 
 .about-shop-item {
   display: grid;
+  align-content: space-between;
 }
 
 .about-text {
@@ -31,4 +32,25 @@
 .about__menu {
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1440px) {
+  .lap_version {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-text,
+.about-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .text_w {
+    width: 100%;
+  }
+
+  .about__sale {
+    font-size: 1.5rem;
+  }
 }

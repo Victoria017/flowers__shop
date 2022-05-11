@@ -5,7 +5,7 @@
   font-weight: bold;
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 .catalog__menu {
@@ -21,16 +21,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.catalog__link {
-  color: #333333;
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-.catalog__link:hover, .catalog__link:active, .catalog__link:focus {
-  color: #333333;
-  font-weight: bold;
 }
 
 .catalog__menu-whom-item {
@@ -142,11 +132,30 @@
   color: #956D84;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+.catalog__link {
+  color: #333333;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.catalog__link:hover, .catalog__link:active, .catalog__link:focus {
+  color: #333333;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+  .catalog__link {
+    font-size: 14px;
+  }
+
+  .catalog__menu-filter {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 920px) {
   .catalog__filter-btn {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
   }
 

@@ -4,7 +4,6 @@
 .header {
     flex-direction: column;
     font-family: $fontMuseoSansCyrl;
-    font-size: $fontSize;
     color: $textLight;
 
     &-top {
@@ -19,12 +18,50 @@
     }
 
     &-bottom {
-        @include d-flex(row);
+        @include d-flex(row, space-between);
         max-width: 88.75rem;
         margin: auto;
         position: relative;
+        padding: 1.75rem 0 4rem;
+
     }
 
+}
+
+.favorite-img {
+    width: 1.5rem;
+}
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+    .header__navigation {
+        display: none !important;
+    }
+    .header__menu-left {
+        justify-content: start !important;
+    }
+    .content{ font-size: 14px !important;
+    }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1440px) {
+    .logo img {
+        width: 80px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .favorite-img {
+        width: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1600px) {
+    .content,
+    .header-top-width,
+    .header-bottom {
+        margin: 0 64px;
+    }
 }
 
 .header__img-left {
@@ -59,7 +96,6 @@
 }
 
 .menu__category {
-    font-size: $fontSize;
     color: $textLight;
     font-family: $font;
     font-weight: 700;
@@ -123,14 +159,11 @@
 
 /* header-menu*/
 
-.header-bottom {
-    padding: 1.75rem 0 4rem;
-}
-
 .menu {
     @include d-flex(column, space-between);
-    padding: 0 12.5rem 0 7.5rem;
     flex-grow: 1;
+    max-width: 814px;
+    margin: 0 2rem;
 
     &__search {
         @include d-flex(row, start);
@@ -193,10 +226,6 @@
 
 }
 
-.favorite-img {
-    width: 40px;
-}
-
 .favorite-price {
     color: $textGray;
     text-decoration: none;
@@ -207,8 +236,10 @@
     font-family: $fontMuseoSansCyrl;
 }
 
-@media only screen and (min-width:320px) and (max-width:768px) {
-
+@media only screen and (min-width:320px) and (max-width:920px) {
+    .content {
+        padding: 0 1rem;
+    }
     .header-bottom {
         justify-content: space-between;
         width: 100%;
@@ -216,12 +247,13 @@
     }
 
     .favorite-img {
-        width: 25px;
+        width: 1.56rem;
     }
 
     .circle-violet {
         font-size: 0.5em;
     }
+
     .badge-mobile {
         width: 16px;
         height: 16px;
@@ -229,12 +261,14 @@
         font-size: 8px;
         background-color: $bgViolet;
     }
-    .border-menu-left{
+
+    .border-menu-left {
         border-right: 1px solid $textViolet;
     }
+
     .border-menu-right {
         border-left: 1px solid $textViolet;
-        
+
     }
 
 }

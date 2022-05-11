@@ -1,2 +1,20 @@
 @import '../variables.scss';
 @import '../mixin.scss';
+
+.catalog__link {
+    color: $textDark;
+    font-size: 1.25rem;
+    font-weight: 400;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $textDark;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+    .catalog__link {
+    font-size: 14px;
+    }
+}

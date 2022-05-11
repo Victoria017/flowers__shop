@@ -13,9 +13,29 @@
   font-weight: 400;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
   .forum {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .forum__about {
+    font-size: 12px;
+    padding: 0.5rem 1rem;
+  }
+
+  .accordion {
+    padding: 0 1rem;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 920px) {
+  .forum {
+    margin-bottom: 1rem;
+    font-size: 1rem;
   }
   .forum__about {
     font-size: 12px;
